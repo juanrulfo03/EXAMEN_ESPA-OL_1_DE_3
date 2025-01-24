@@ -1,0 +1,2426 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" prefix="dc: http://purl.org/dc/elements/1.1/">
+<head><meta name="author" content="Created with Hot Potatoes by Half-Baked Software, registered to Rodrigo J&#x00E1;come."/><meta name="keywords" content="Hot Potatoes, Hot Potatoes, Half-Baked Software, Windows, University of Victoria"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+<meta name="dc:creator" content="Rodrigo J&#x00E1;come" />
+<meta name="dc:title" content="Instituto Everest. Espa&#x00F1;ol 1/3. Prof. Rodrigo J&#x00E1;come. Whatsapp 6621724029" />
+
+
+
+<title>
+Instituto Everest. Espa&#x00F1;ol 1/3. Prof. Rodrigo J&#x00E1;come. Whatsapp 6621724029
+</title>
+
+<!-- Made with executable version 7.0 Release 3 Build 0 -->
+
+<!-- The following insertion allows you to add your own code directly to this head tag from the configuration screen -->
+
+
+
+<style>
+
+
+/* This is the CSS stylesheet used in the exercise. */
+/* Elements in square brackets are replaced by data based on configuration settings when the exercise is built. */
+
+/* BeginCorePageCSS */
+
+/* Made with executable version 7.0 Release 3 Build 0 */
+
+
+
+/* CSS variables for colours. */
+:root{
+	--strFontFace:       Geneva,Arial,sans-serif;
+	--strFontSize:       medium;
+	--strTextColor:      #000000;
+	--strTitleColor:     #ffffff;
+
+	--strFuncLightColor: #7fffbf;
+	--strFuncShadeColor: #007f40;
+	--strLinkColor:      #0000FF;
+	--strVLinkColor:     #0000CC;
+	
+	--strNavBarColor:    #000000;
+	--strNavLightColor:  #7f7f7f;
+	--strNavShadeColor:  #000000;
+	--strNavTextColor:   #ffffff;
+	
+	--strPageBGColor:    #004000;
+	--strExBGColor:      #00ff80;
+}
+
+body{
+	font-family: var(--strFontFace);
+	background-color: var(--strPageBGColor);
+	color: var(--strTextColor);
+ 
+	margin-right: 5%;
+	margin-left: 5%;
+	font-size: var(--strFontSize);
+	padding-bottom: 0.5em;
+}
+
+p{
+	text-align: left;
+	margin: 0px;
+	font-size: 1em;
+}
+
+table,div,span,td{
+	font-size: 1em;
+	color: var(--strTextColor);
+}
+
+div.Titles{
+	padding: 0.5em;;
+	text-align: center;
+	color: var(--strTitleColor);
+}
+
+button{
+	font-family: var(--strFontFace);
+	font-size: 1em;
+	display: inline;
+}
+
+.ExerciseTitle{
+	font-size: 140%;
+	color: var(--strTitleColor);
+}
+
+.ExerciseSubtitle{
+	font-size: 120%;
+	color: var(--strTitleColor);
+}
+
+div.StdDiv, div.ExerciseContainer, div.ReadingContainer{
+	background-color: var(--strExBGColor);
+	text-align: center;
+	font-size: 1em;
+	color: var(--strTextColor);
+	padding: 0.5em;
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+	border-color: var(--strTextColor);
+	margin-bottom: 1px;
+}
+
+div.ReadingContainer, div.ExerciseContainer{
+	min-width: 15em;
+	flex-grow: 1;
+	flex-basis: 0;
+	margin: 1px;
+}
+
+div#ContainerDiv{
+	margin: -1px;
+	padding: 0;
+	border: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+/* EndCorePageCSS */
+
+.RTLText{
+	text-align: right;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", var(--strFontFace); 
+}
+
+.CentredRTLText{
+	text-align: center;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", var(--strFontFace); 
+}
+
+button p.RTLText{
+	text-align: center;
+}
+
+.RTLGapBox{
+	text-align: right;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Times New Roman", var(--strFontFace);
+}
+
+.Guess{
+	font-weight: bold;
+}
+
+.CorrectAnswer{
+	font-weight: bold;
+}
+
+div#Timer{
+	padding: 0.25em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: var(--strTitleColor);
+}
+
+span#TimerText{
+	padding: 0.25em;
+	border-width: 1px;
+	border-style: solid;
+	font-weight: bold;
+	display: none;
+	color: var(--strTitleColor);
+}
+
+span.Instructions{
+
+}
+
+div.ExerciseText{
+
+}
+
+.FeedbackText, .FeedbackText span.CorrectAnswer, .FeedbackText span.Guess, .FeedbackText span.Answer{
+	color: var(--strTitleColor);
+}
+
+.LeftItem{
+	font-size: 1em;
+	color: var(--strTextColor);
+	text-align: left;
+}
+
+.RightItem{
+	font-weight: bold;
+	font-size: 1em;
+	color: var(--strTextColor);
+	text-align: left;
+}
+
+span.CorrectMark{
+
+}
+
+input, textarea{
+	font-family: var(--strFontFace);
+	font-size: 120%;
+}
+
+select{
+	font-size: 1em;
+}
+
+div.Feedback {
+	background-color: var(--strPageBGColor);
+	left: 33%;
+	width: 34%;
+	top: 33%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	padding: 5px;
+	text-align: center;
+	color: var(--strTitleColor);
+	position: absolute;
+	display: none;
+	font-size: 1em;
+}
+
+
+
+
+div.ExerciseDiv{
+	color: var(--strTextColor);
+}
+
+/* JMatch standard output table. */
+table.MatchTable{
+	margin: 2em auto; 
+	border-width: 0;
+}
+
+/* JMatch flashcard styles */
+table.FlashcardTable{
+	background-color: transparent;
+	color: var(--strTextColor);
+	border-color: var(--strTextColor);
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	/*width: 90%;*/
+	position: relative;
+	text-align: center;
+	padding: 0px;
+}
+
+table.FlashcardTable tr{
+	border-style: none;
+	margin: 0px;
+	padding: 0px;
+	background-color: var(--strExBGColor);
+}
+
+table.FlashcardTable td.Showing{
+	font-size: 140%;
+	text-align: center;
+	width: 50%;
+	display: table-cell;
+	padding: 2em;
+	margin: 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 0.5em;
+	color: var(--strTextColor);
+	box-shadow: 0.2em 0.3em 0.2em var(--strNavShadeColor);
+	background-color: var(--strPageBGColor);
+}
+
+table.FlashcardTable td.Hidden{
+	display: none;
+}
+
+/* JMix styles */
+div.JMixDrag, div.JMatchDrag{
+	padding: 0;
+	background-color: var(--strPageBGColor);
+	border-style: none;
+}
+
+div#GuessDiv{
+	padding: 0.5em;
+	margin-bottom: 2em;
+}
+
+div#SegmentDiv{
+	margin-top: 2em;
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+a.ExSegment{
+	font-size: 120%;
+	font-weight: bold;
+	text-decoration: none;
+	color: var(--strTextColor);
+	display: inline-block;
+	padding: 0.5em;
+	border: solid 1pt gray;
+	margin-bottom: 0.5em;
+}
+
+span.RemainingWordList{
+	font-style: italic;
+}
+
+div.DropLine {
+	position: absolute;
+	text-align: left;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: var(--strTitleColor);
+	width: 80%;
+	left: 10%;
+}
+
+/* JCloze styles */
+
+.ClozeWordList{
+	text-align: center;
+	font-weight: bold;
+}
+
+div.ClozeBody{
+	text-align: left;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	line-height: 2.0
+}
+
+span.GapSpan{
+	font-weight: bold;
+}
+
+/* JCross styles */
+
+table.CrosswordGrid{
+	margin: auto auto 1em auto;
+	border-collapse: collapse;
+	padding: 0px;
+	background-color: #000000;
+}
+
+table.CrosswordGrid tbody tr td{
+	width: 1.5em;
+	height: 1.5em;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 140%;
+	padding: 1px;
+	margin: 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	color: #000000;
+}
+
+table.CrosswordGrid span{
+	color: #000000;
+}
+
+table.CrosswordGrid td.BlankCell{
+	background-color: #000000;
+	color: #000000;
+}
+
+table.CrosswordGrid td.LetterOnlyCell{
+	text-align: center;
+	vertical-align: middle;
+	background-color: #ffffff;
+	color: #000000;
+	font-weight: bold;
+}
+
+table.CrosswordGrid td.NumLetterCell{
+	text-align: left;
+	vertical-align: top;
+	background-color: #ffffff;
+	color: #000000;
+	padding: 1px;
+	font-weight: bold;
+}
+
+.NumLetterCellText{
+	cursor: pointer;
+	color: #000000;
+}
+
+.GridNum{
+	vertical-align: super;
+	font-size: 66%;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+}
+
+.GridNum:hover, .GridNum:visited{
+	color: #000000;
+}
+
+table#Clues{
+	margin: auto;
+	vertical-align: top;
+}
+
+table#Clues td{
+	vertical-align: top;
+}
+
+table.ClueList{
+  margin: auto;
+}
+
+td.ClueNum{
+	text-align: right;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+td.Clue{
+	text-align: left;
+}
+
+div#ClueEntry{
+	text-align: left;
+	margin-bottom: 1em;
+}
+
+/* Keypad styles */
+
+div.Keypad{
+	text-align: center;
+	display: none; /* initially hidden, shown if needed */
+	margin-bottom: 0.5em;
+}
+
+div.Keypad button{
+	font-family: var(--strFontFace);
+	font-size: 120%;
+	background-color: #ffffff;
+	color: #000000;
+	width: 2em;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 0.5em;
+	color: var(--strTextColor);
+	box-shadow: 0.2em 0.3em 0.2em var(--strTextColor);
+}
+
+/* JQuiz styles */
+
+div.QuestionNavigation{
+	text-align: center;
+}
+
+.QNum{
+	margin: 0em 1em 0.5em 1em;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+textarea{
+	font-family: var(--strFontFace);
+}
+
+.QuestionText{
+	text-align: left;
+	margin: 0px;
+	font-size: 1em;
+}
+
+.Answer{
+	font-size: 120%;
+}
+
+.PartialAnswer{
+	font-size: 120%;
+	letter-spacing: 0.1em;
+	color: var(--strTitleColor);
+}
+
+.Highlight{
+	color: #000000;
+	background-color: #ffff00;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+ol.QuizQuestions{
+	text-align: left;
+	list-style-type: none;
+}
+
+li.QuizQuestion{
+	padding: 1em;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+}
+
+ol.MCAnswers{
+	text-align: left;
+	list-style-type: upper-alpha;
+	padding: 1em;
+}
+
+ol.MCAnswers li{
+	margin-bottom: 1em;
+}
+
+ol.MSelAnswers{
+	text-align: left;
+	list-style-type: lower-alpha;
+	padding: 1em;
+}
+
+div.ShortAnswer{
+	padding: 1em;
+}
+
+.FuncButton {
+	border-style: solid;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	min-width: 3em;
+
+	border-left-color: var(--strFuncLightColor);
+	border-top-color: var(--strFuncLightColor);
+	border-right-color: var(--strFuncShadeColor);
+	border-bottom-color: var(--strFuncShadeColor);
+	color: var(--strTextColor);
+	background-color: var(--strExBGColor);
+
+	border-width: 1pt;
+	cursor: pointer;	
+	box-shadow: 0.2em 0.3em 0.2em var(--strFuncShadeColor);
+}
+
+.FuncButton:active {
+	box-shadow: none;
+}
+
+.FuncButton:hover{
+	color: var(--strExBGColor);
+	background-color: var(--strTextColor);
+}
+
+/*BeginNavBarStyle*/
+
+div.NavButtonBar{
+	background-color: var(--strNavBarColor);
+	text-align: center;
+	margin: 0.25rem 0;
+	clear: both;
+	font-size: 1em;
+	padding: 0.2em;
+	box-sizing: border-box;
+}
+
+.NavButton {
+	border-style: solid;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	min-width: 3em;
+	
+	border-left-color: var(--strNavLightColor);
+	border-top-color: var(--strNavLightColor);
+	border-right-color: var(--strNavShadeColor);
+	border-bottom-color: var(--strNavShadeColor); 
+	background-color: var(--strNavBarColor);
+	color: var(--strNavTextColor);
+
+	border-width: 1pt;
+	cursor: pointer;	
+	box-shadow: 0.2em 0.3em 0.2em var(--strNavShadeColor);
+}
+
+.NavButton:active {
+	box-shadow: none;
+}
+
+.NavButton:hover{
+	color: var(--strNavBarColor);
+	background-color: var(--strNavTextColor);
+}
+
+/*EndNavBarStyle*/
+
+a{
+	color: var(--strLinkColor);
+}
+
+a:visited{
+	color: var(--strVLinkColor);
+}
+
+a:hover{
+	color: var(--strLinkColor);
+}
+
+div.CardStyle {
+	position: absolute;
+	font-family: var(--strFontFace);
+	font-size: 1em;
+	border-style: solid;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	min-width: 2em;
+	border-width: 1pt;
+	color: var(--strTextColor);
+	box-shadow: 0.2em 0.3em 0.2em var(--strTextColor);
+	background-color: var(--strExBGColor);
+	left: -50px;
+	top: -50px;
+	overflow: visible;
+	touch-action: none;
+	user-select: none;
+	box-sizing: border-box;
+}
+
+div.CardStyleCentered{
+	text-align: center;
+}
+
+.rtl{
+	text-align: right;
+	font-size: 140%;
+}
+
+
+</style>
+
+<script>
+
+//<![CDATA[
+
+<!--
+
+
+
+
+//CODE FOR HANDLING NAV BUTTONS AND FUNCTION BUTTONS
+
+function FocusAButton(){
+	if (document.getElementById('CheckButton1') != null){
+		document.getElementById('CheckButton1').focus();
+	}
+	else{
+		if (document.getElementById('CheckButton2') != null){
+			document.getElementById('CheckButton2').focus();
+		}
+		else{
+			document.getElementsByTagName('button')[0].focus();
+		}
+	}
+}
+
+
+
+
+//CODE FOR HANDLING DISPLAY OF POPUP FEEDBACK BOX
+
+var topZ = 1000;
+
+function ShowMessage(Feedback){
+	var Output = Feedback + '<br /><br />';
+	document.getElementById('FeedbackContent').innerHTML = Output;
+	var FDiv = document.getElementById('FeedbackDiv');
+	topZ++;
+	FDiv.style.zIndex = topZ;
+	FDiv.style.top = TopSettingWithScrollOffset(30) + 'px';
+
+	FDiv.style.display = 'block';
+
+	ShowElements(false, 'input');
+	ShowElements(false, 'select');
+	ShowElements(false, 'object');
+	ShowElements(true, 'object', 'FeedbackContent');
+
+//Focus the OK button
+	setTimeout("document.getElementById('FeedbackOKButton').focus()", 50);
+	
+//
+}
+
+function ShowElements(Show, TagName, ContainerToReverse){
+// added third argument to allow objects in the feedback box to appear
+//IE bug -- hide all the form elements that will show through the popup
+//FF on Mac bug : doesn't redisplay objects whose visibility is set to visible
+//unless the object's display property is changed
+
+	//get container object (by Id passed in, or use document otherwise)
+	TopNode = document.getElementById(ContainerToReverse);
+	var Els;
+	if (TopNode != null) {
+		Els = TopNode.getElementsByTagName(TagName);
+	} else {
+		Els = document.getElementsByTagName(TagName);
+	}
+
+	for (var i=0; i<Els.length; i++){
+		if (TagName == "object") {
+			//manipulate object elements in all browsers
+			if (Show == true){
+				Els[i].style.visibility = 'visible';
+			}
+			else{
+				Els[i].style.visibility = 'hidden';
+			}
+		} 
+	}
+}
+
+
+
+function HideFeedback(){
+	document.getElementById('FeedbackDiv').style.display = 'none';
+	ShowElements(true, 'input');
+	ShowElements(true, 'select');
+	ShowElements(true, 'object');
+}
+
+
+//GENERAL UTILITY FUNCTIONS AND VARIABLES
+
+//PAGE DIMENSION FUNCTIONS
+function PageDim(){
+//Get the page width and height
+	this.W = 600;
+	this.H = 400;
+	this.W = document.getElementsByTagName('body')[0].offsetWidth;
+	this.H = document.getElementsByTagName('body')[0].offsetHeight;
+}
+
+var pg = null;
+
+function GetPageXY(El) {
+	var XY = {x: 0, y: 0};
+	while(El){
+		XY.x += El.offsetLeft;
+		XY.y += El.offsetTop;
+		El = El.offsetParent;
+	}
+	return XY;
+}
+
+function GetScrollTop(){
+	if (typeof(window.pageYOffset) == 'number'){
+		return window.pageYOffset;
+	}
+	else{
+		if ((document.body)&&(document.body.scrollTop)){
+			return document.body.scrollTop;
+		}
+		else{
+			if ((document.documentElement)&&(document.documentElement.scrollTop)){
+				return document.documentElement.scrollTop;
+			}
+			else{
+				return 0;
+			}
+		}
+	}
+}
+
+function GetViewportHeight(){
+	if (typeof window.innerHeight != 'undefined'){
+		return window.innerHeight;
+	}
+	else{
+		if (((typeof document.documentElement != 'undefined')&&(typeof document.documentElement.clientHeight !=
+     'undefined'))&&(document.documentElement.clientHeight != 0)){
+			return document.documentElement.clientHeight;
+		}
+		else{
+			return document.getElementsByTagName('body')[0].clientHeight;
+		}
+	}
+}
+
+function TopSettingWithScrollOffset(TopPercent){
+	var T = Math.floor(GetViewportHeight() * (TopPercent/100));
+	return GetScrollTop() + T; 
+}
+
+//CODE FOR AVOIDING LOSS OF DATA WHEN BACKSPACE KEY INVOKES history.back()
+var InTextBox = false;
+
+function SuppressBackspace(e){ 
+	if (InTextBox == true){return;}
+	thisKey = e.keyCode;
+
+	var Suppress = false;
+
+	if (thisKey == 8) {
+		Suppress = true;
+		e.preventDefault();
+	}
+}
+
+window.addEventListener('keypress',SuppressBackspace,false);
+
+function ReduceItems(InArray, ReduceToSize){
+	var ItemToDump=0;
+	var j=0;
+	while (InArray.length > ReduceToSize){
+		ItemToDump = Math.floor(InArray.length*Math.random());
+		InArray.splice(ItemToDump, 1);
+	}
+}
+
+function Shuffle(InArray){
+	var Num;
+	var Temp = new Array();
+	var Len = InArray.length;
+
+	var j = Len;
+
+	for (var i=0; i<Len; i++){
+		Temp[i] = InArray[i];
+	}
+
+	for (i=0; i<Len; i++){
+		Num = Math.floor(j  *  Math.random());
+		InArray[i] = Temp[Num];
+
+		for (var k=Num; k < (j-1); k++) {
+			Temp[k] = Temp[k+1];
+		}
+		j--;
+	}
+	return InArray;
+}
+
+function WriteToInstructions(Feedback) {
+	document.getElementById('InstructionsDiv').innerHTML = Feedback;
+
+}
+
+
+
+
+function EscapeDoubleQuotes(InString){
+	return InString.replace(/"/g, '&quot;')
+}
+
+function TrimString(InString){
+        var x = 0;
+
+        if (InString.length != 0) {
+                while ((InString.charAt(InString.length - 1) == '\u0020') || (InString.charAt(InString.length - 1) == '\u000A') || (InString.charAt(InString.length - 1) == '\u000D')){
+                        InString = InString.substring(0, InString.length - 1)
+                }
+
+                while ((InString.charAt(0) == '\u0020') || (InString.charAt(0) == '\u000A') || (InString.charAt(0) == '\u000D')){
+                        InString = InString.substring(1, InString.length)
+                }
+
+                while (InString.indexOf('  ') != -1) {
+                        x = InString.indexOf('  ')
+                        InString = InString.substring(0, x) + InString.substring(x+1, InString.length)
+                 }
+
+                return InString;
+        }
+
+        else {
+                return '';
+        }
+}
+
+function FindLongest(InArray){
+	if (InArray.length < 1){return -1;}
+
+	var Longest = 0;
+	for (var i=1; i<InArray.length; i++){
+		if (InArray[i].length > InArray[Longest].length){
+			Longest = i;
+		}
+	}
+	return Longest;
+}
+
+//SELECTION OBJECT FOR TYPING WITH KEYPAD
+var selObj = null;
+            
+SelObj = function(box){
+	this.box = box;
+	this.selStart = this.box.selectionStart;
+	this.selEnd = this.box.selectionEnd;
+	this.selText = this.box.value.substring(this.selStart, this.selEnd);
+	return this;
+}
+
+function setSelText(newText){
+	var caretPos = this.selStart + newText.length;
+	var newValue = this.box.value.substring(0, this.selStart);
+	newValue += newText;
+	newValue += this.box.value.substring(this.selEnd, this.box.value.length);
+	this.box.value = newValue;
+	this.box.setSelectionRange(caretPos, caretPos);
+	this.box.focus();
+}
+SelObj.prototype.setSelText = setSelText;
+
+function setSelSelectionRange(start, end){
+	this.box.setSelectionRange(start, end);
+}
+SelObj.prototype.setSelSelectionRange = setSelSelectionRange;
+
+//UNICODE CHARACTER FUNCTIONS
+function IsCombiningDiacritic(CharNum){
+	var Result = (((CharNum >= 0x0300)&&(CharNum <= 0x370))||((CharNum >= 0x20d0)&&(CharNum <= 0x20ff)));
+	Result = Result || (((CharNum >= 0x3099)&&(CharNum <= 0x309a))||((CharNum >= 0xfe20)&&(CharNum <= 0xfe23)));
+	return Result;
+}
+
+function IsCJK(CharNum){
+	return ((CharNum >= 0x3000)&&(CharNum < 0xd800));
+}
+
+//SETUP FUNCTIONS
+//BROWSER WILL REFILL TEXT BOXES FROM CACHE IF NOT PREVENTED
+function ClearTextBoxes(){
+	var NList = document.getElementsByTagName('input');
+	for (var i=0; i<NList.length; i++){
+		if ((NList[i].id.indexOf('Guess') > -1)||(NList[i].id.indexOf('Gap') > -1)){
+			NList[i].value = '';
+		}
+		if (NList[i].id.indexOf('Chk') > -1){
+			NList[i].checked = '';
+		}
+	}
+}
+
+
+
+
+
+
+
+//JQUIZ CORE JAVASCRIPT CODE
+
+var CurrQNum = 0;
+var CorrectIndicator = '&#x2714;';
+var IncorrectIndicator = '&#x2718;';
+var YourScoreIs = 'Your score is ';
+
+//New for 6.2.2.0
+var CompletedSoFar = 'Questions completed so far: ';
+var ExerciseCompleted = 'You have completed the exercise.';
+var ShowCompletedSoFar = true;
+
+var ContinuousScoring = true;
+var CorrectFirstTime = 'Questions answered correctly first time: ';
+var ShowCorrectFirstTime = true;
+var ShuffleQs = false;
+var ShuffleAs = false;
+var DefaultRight = 'Correct!';
+var DefaultWrong = 'Sorry! Try again.';
+var QsToShow = 89;
+var Score = 0;
+var Finished = false;
+var Qs = null;
+var QArray = new Array();
+var ShowingAllQuestions = false;
+var ShowAllQuestionsCaption = 'Show all questions';
+var ShowOneByOneCaption = 'Show questions one by one';
+var State = new Array();
+var Feedback = '';
+var TimeOver = false;
+var strInstructions = '';
+var Locked = false;
+
+//The following variable can be used to add a message explaining that
+//the question is finished, so no further marking will take place.
+var strQuestionFinished = '';
+
+function CompleteEmptyFeedback(){
+	var QNum, ANum;
+	for (QNum=0; QNum<I.length; QNum++){
+//Only do this if not multi-select
+		if (I[QNum][2] != '3'){
+  		for (ANum = 0; ANum<I[QNum][3].length; ANum++){
+  			if (I[QNum][3][ANum][1].length < 1){
+  				if (I[QNum][3][ANum][2] > 0){
+  					I[QNum][3][ANum][1] = DefaultRight;
+  				}
+  				else{
+  					I[QNum][3][ANum][1] = DefaultWrong;
+  				}
+  			}
+  		}
+		}
+	}
+}
+
+function SetUpQuestions(){
+	var AList = new Array(); 
+	var QList = new Array();
+	var i, j;
+	Qs = document.getElementById('Questions');
+	while (Qs.getElementsByTagName('li').length > 0){
+		QList.push(Qs.removeChild(Qs.getElementsByTagName('li')[0]));
+	}
+	var DumpItem = 0;
+	if (QsToShow > QList.length){
+		QsToShow = QList.length;
+	}
+	while (QsToShow < QList.length){
+		DumpItem = Math.floor(QList.length*Math.random());
+		for (j=DumpItem; j<(QList.length-1); j++){
+			QList[j] = QList[j+1];
+		}
+		QList.length = QList.length-1;
+	}
+	if (ShuffleQs == true){
+		QList = Shuffle(QList);
+	}
+	if (ShuffleAs == true){
+		var As;
+		for (var i=0; i<QList.length; i++){
+			As = QList[i].getElementsByTagName('ol')[0];
+			if (As != null){
+  			AList.length = 0;
+				while (As.getElementsByTagName('li').length > 0){
+					AList.push(As.removeChild(As.getElementsByTagName('li')[0]));
+				}
+				AList = Shuffle(AList);
+				for (j=0; j<AList.length; j++){
+					As.appendChild(AList[j]);
+				}
+			}
+		}
+	}
+	
+	for (i=0; i<QList.length; i++){
+		Qs.appendChild(QList[i]);
+		QArray[QArray.length] = QList[i];
+	}
+
+//Show the first item
+	QArray[0].style.display = '';
+	
+//Now hide all except the first item
+	for (i=1; i<QArray.length; i++){
+		QArray[i].style.display = 'none';
+	}		
+	SetQNumReadout();
+	
+	SetFocusToTextbox();
+}
+
+function SetFocusToTextbox(){
+//if there's a textbox, set the focus in it
+	if (QArray[CurrQNum].getElementsByTagName('input')[0] != null){
+		QArray[CurrQNum].getElementsByTagName('input')[0].focus();
+//and show a keypad if there is one
+		if (document.getElementById('CharacterKeypad') != null){
+			document.getElementById('CharacterKeypad').style.display = 'block';
+		}
+	}
+	else{
+  	if (QArray[CurrQNum].getElementsByTagName('textarea')[0] != null){
+  		QArray[CurrQNum].getElementsByTagName('textarea')[0].focus();	
+//and show a keypad if there is one
+			if (document.getElementById('CharacterKeypad') != null){
+				document.getElementById('CharacterKeypad').style.display = 'block';
+			}
+		}
+//This added for 6.0.4.11: hide accented character buttons if no textbox
+		else{
+			if (document.getElementById('CharacterKeypad') != null){
+				document.getElementById('CharacterKeypad').style.display = 'none';
+			}
+		}
+	}
+}
+
+function ChangeQ(ChangeBy){
+//The following line prevents moving to another question until the current
+//question is answered correctly. Uncomment it to enable this behaviour. 
+//	if (State[CurrQNum][0] == -1){return;}
+	if (((CurrQNum + ChangeBy) < 0)||((CurrQNum + ChangeBy) >= QArray.length)){return;}
+	QArray[CurrQNum].style.display = 'none';
+	CurrQNum += ChangeBy;
+	QArray[CurrQNum].style.display = '';
+//Undocumented function added 10/12/2004
+	ShowSpecialReadingForQuestion();
+	SetQNumReadout();
+	SetFocusToTextbox();
+}
+
+var HiddenReadingShown = false;
+function ShowSpecialReadingForQuestion(){
+//Undocumented function for showing specific reading text elements which change with each question
+//Added on 10/12/2004
+	if (document.getElementById('ReadingDiv') != null){
+		if (HiddenReadingShown == true){
+			document.getElementById('ReadingDiv').innerHTML = '';
+		}
+		if (QArray[CurrQNum] != null){
+//Fix for 6.0.4.25
+			var Children = QArray[CurrQNum].getElementsByTagName('div');
+			for (var i=0; i<Children.length; i++){
+			if (Children[i].className=="HiddenReading"){
+					document.getElementById('ReadingDiv').innerHTML = Children[i].innerHTML;
+					HiddenReadingShown = true;
+//Hide the ShowAllQuestions button to avoid confusion
+					if (document.getElementById('ShowMethodButton') != null){
+						document.getElementById('ShowMethodButton').style.display = 'none';
+					}
+				}
+			}	
+		}
+	}
+}
+
+function SetQNumReadout(){
+	document.getElementById('QNumReadout').innerHTML = (CurrQNum+1) + ' / ' + QArray.length;
+	if ((CurrQNum+1) >= QArray.length){
+		if (document.getElementById('NextQButton') != null){
+			document.getElementById('NextQButton').style.visibility = 'hidden';
+		}
+	}
+	else{
+		if (document.getElementById('NextQButton') != null){
+			document.getElementById('NextQButton').style.visibility = 'visible';
+		}
+	}
+	if (CurrQNum <= 0){
+		if (document.getElementById('PrevQButton') != null){
+			document.getElementById('PrevQButton').style.visibility = 'hidden';
+		}
+	}
+	else{
+		if (document.getElementById('PrevQButton') != null){
+			document.getElementById('PrevQButton').style.visibility = 'visible';
+		}
+	}
+}
+
+var I=new Array();
+I[0]=new Array();I[0][0]=100;
+I[0][1]='';
+I[0][2]='0';
+I[0][3]=new Array();
+I[0][3][0]=new Array('El pueblo','',0,0,1);
+I[0][3][1]=new Array('pueblo','',0,0,1);
+I[0][3][2]=new Array('El pueblo cerca de la laguna','',1,100,1);
+I[0][3][3]=new Array('la laguna','',0,0,1);
+I[1]=new Array();I[1][0]=100;
+I[1][1]='';
+I[1][2]='0';
+I[1][3]=new Array();
+I[1][3][0]=new Array('Como lirio entre las espinas','',0,0,1);
+I[1][3][1]=new Array('mi amada entre las doncellas','',1,100,1);
+I[1][3][2]=new Array('las doncellas','',0,0,1);
+I[1][3][3]=new Array('lirio entre as espinas','',0,0,1);
+I[2]=new Array();I[2][0]=100;
+I[2][1]='';
+I[2][2]='0';
+I[2][3]=new Array();
+I[2][3][0]=new Array('las selvas inexploradas','',0,0,1);
+I[2][3][1]=new Array('un elefante','',0,0,1);
+I[2][3][2]=new Array('un elefante blanco desconocido','',1,100,1);
+I[2][3][3]=new Array('habita','',0,0,1);
+I[3]=new Array();I[3][0]=100;
+I[3][1]='';
+I[3][2]='0';
+I[3][3]=new Array();
+I[3][3][0]=new Array('Decidieron','',0,0,1);
+I[3][3][1]=new Array('los mineros','',0,0,1);
+I[3][3][2]=new Array('las condiciones','',0,0,1);
+I[3][3][3]=new Array('Decidieron las condiciones para los nuevos contratos','',1,100,1);
+I[4]=new Array();I[4][0]=100;
+I[4][1]='';
+I[4][2]='0';
+I[4][3]=new Array();
+I[4][3][0]=new Array('Margarita','',0,0,1);
+I[4][3][1]=new Array('lleg\u00F3','',0,0,1);
+I[4][3][2]=new Array('lleg\u00F3 anunciando la feliz noticia','',1,100,1);
+I[4][3][3]=new Array('lleg\u00F3 anunciando','',0,0,1);
+I[5]=new Array();I[5][0]=100;
+I[5][1]='';
+I[5][2]='0';
+I[5][3]=new Array();
+I[5][3][0]=new Array('estuvo cantando la misma canci\u00F3n todo el tiempo durante los festejos','',1,100,1);
+I[5][3][1]=new Array('Durante los festejos','',0,0,1);
+I[5][3][2]=new Array('el primo de Jos\u00E9','',0,0,1);
+I[5][3][3]=new Array('estuvo cantando','',0,0,1);
+I[6]=new Array();I[6][0]=100;
+I[6][1]='';
+I[6][2]='0';
+I[6][3]=new Array();
+I[6][3][0]=new Array('los materiales','',0,0,1);
+I[6][3][1]=new Array('carpinteros','',1,100,1);
+I[6][3][2]=new Array('aquellos carpinteros','',0,0,1);
+I[6][3][3]=new Array('compraron','',0,0,1);
+I[7]=new Array();I[7][0]=100;
+I[7][1]='';
+I[7][2]='0';
+I[7][3]=new Array();
+I[7][3][0]=new Array('Aquel grupo de estudiantes','',0,0,1);
+I[7][3][1]=new Array('grupo','',1,100,1);
+I[7][3][2]=new Array('estudiantes','',0,0,1);
+I[7][3][3]=new Array('la biblioteca','',0,0,1);
+I[8]=new Array();I[8][0]=100;
+I[8][1]='';
+I[8][2]='0';
+I[8][3]=new Array();
+I[8][3][0]=new Array('Jalisco','',0,0,1);
+I[8][3][1]=new Array('Quiero ir','',0,0,1);
+I[8][3][2]=new Array('r\u00E1pidamente','',0,0,1);
+I[8][3][3]=new Array('(sujeto t\u00E1cito)','',1,100,1);
+I[9]=new Array();I[9][0]=100;
+I[9][1]='';
+I[9][2]='0';
+I[9][3]=new Array();
+I[9][3][0]=new Array('estirpes','',0,0,1);
+I[9][3][1]=new Array('no tienen','',0,0,1);
+I[9][3][2]=new Array('tienen','',1,100,1);
+I[9][3][3]=new Array('cien a\u00F1os de soledad','',0,0,1);
+I[10]=new Array();I[10][0]=100;
+I[10][1]='';
+I[10][2]='0';
+I[10][3]=new Array();
+I[10][3][0]=new Array('discutas','',1,100,1);
+I[10][3][1]=new Array('No discutas','',0,0,1);
+I[10][3][2]=new Array('la verdad','',0,0,1);
+I[10][3][3]=new Array('mentiras','',0,0,1);
+I[11]=new Array();I[11][0]=100;
+I[11][1]='';
+I[11][2]='0';
+I[11][3]=new Array();
+I[11][3][0]=new Array('Sujeto expreso-predicado verbal','',0,0,1);
+I[11][3][1]=new Array('Sujeto expreso-predicado nominal','',0,0,1);
+I[11][3][2]=new Array('Sujeto t\u00E1cito-predicado verbal','',1,100,1);
+I[11][3][3]=new Array('Sujeto t\u00E1cito-predicado nominal','',0,0,1);
+I[12]=new Array();I[12][0]=100;
+I[12][1]='';
+I[12][2]='0';
+I[12][3]=new Array();
+I[12][3][0]=new Array('Sujeto expreso-predicado verbal','',1,100,1);
+I[12][3][1]=new Array('Sujeto expreso-predicado nominal','',0,0,1);
+I[12][3][2]=new Array('Sujeto t\u00E1cito-predicado verbal','',0,0,1);
+I[12][3][3]=new Array('Sujeto t\u00E1cito-predicado nominal','',0,0,1);
+I[13]=new Array();I[13][0]=100;
+I[13][1]='';
+I[13][2]='0';
+I[13][3]=new Array();
+I[13][3][0]=new Array('Sujeto expreso-predicado verbal','',0,0,1);
+I[13][3][1]=new Array('Sujeto expreso-predicado nominal','',0,0,1);
+I[13][3][2]=new Array('Sujeto t\u00E1cito-predicado verbal','',0,0,1);
+I[13][3][3]=new Array('Sujeto t\u00E1cito-predicado nominal','',1,100,1);
+I[14]=new Array();I[14][0]=100;
+I[14][1]='';
+I[14][2]='0';
+I[14][3]=new Array();
+I[14][3][0]=new Array('Sujeto expreso-predicado verbal','',0,0,1);
+I[14][3][1]=new Array('Sujeto expreso-predicado nominal','',0,0,1);
+I[14][3][2]=new Array('Sujeto t\u00E1cito-predicado verbal','',0,0,1);
+I[14][3][3]=new Array('Sujeto t\u00E1cito-predicado nominal','',1,100,1);
+I[15]=new Array();I[15][0]=100;
+I[15][1]='';
+I[15][2]='0';
+I[15][3]=new Array();
+I[15][3][0]=new Array('Sujeto expreso-predicado verbal','',0,0,1);
+I[15][3][1]=new Array('Sujeto expreso-predicado nominal','',1,100,1);
+I[15][3][2]=new Array('Sujeto t\u00E1cito-predicado verbal','',0,0,1);
+I[15][3][3]=new Array('Sujeto t\u00E1cito-predicado nominal','',0,0,1);
+I[16]=new Array();I[16][0]=100;
+I[16][1]='';
+I[16][2]='0';
+I[16][3]=new Array();
+I[16][3][0]=new Array('Sujeto expreso-predicado verbal','',0,0,1);
+I[16][3][1]=new Array('Sujeto expreso-predicado nominal','',1,100,1);
+I[16][3][2]=new Array('Sujeto t\u00E1cito-predicado verbal','',0,0,1);
+I[16][3][3]=new Array('Sujeto t\u00E1cito-predicado nominal','',0,0,1);
+I[17]=new Array();I[17][0]=100;
+I[17][1]='';
+I[17][2]='0';
+I[17][3]=new Array();
+I[17][3][0]=new Array('Sujeto expreso-predicado verbal','',0,0,1);
+I[17][3][1]=new Array('Sujeto expreso-predicado nominal','',0,0,1);
+I[17][3][2]=new Array('Sujeto t\u00E1cito-predicado verbal','',1,100,1);
+I[17][3][3]=new Array('Sujeto t\u00E1cito-predicado nominal','',0,0,1);
+I[18]=new Array();I[18][0]=100;
+I[18][1]='';
+I[18][2]='0';
+I[18][3]=new Array();
+I[18][3][0]=new Array('Sujeto expreso-predicado verbal','',0,0,1);
+I[18][3][1]=new Array('Sujeto expreso-predicado nominal','',1,100,1);
+I[18][3][2]=new Array('Sujeto t\u00E1cito-predicado verbal','',0,0,1);
+I[18][3][3]=new Array('Sujeto t\u00E1cito-predicado nominal','',0,0,1);
+I[19]=new Array();I[19][0]=100;
+I[19][1]='';
+I[19][2]='0';
+I[19][3]=new Array();
+I[19][3][0]=new Array('Sujeto expreso-predicado verbal','',0,0,1);
+I[19][3][1]=new Array('Sujeto expreso-predicado nominal','',0,0,1);
+I[19][3][2]=new Array('Sujeto t\u00E1cito-predicado verbal','',1,100,1);
+I[19][3][3]=new Array('Sujeto t\u00E1cito-predicado nominal','',0,0,1);
+I[20]=new Array();I[20][0]=100;
+I[20][1]='';
+I[20][2]='0';
+I[20][3]=new Array();
+I[20][3][0]=new Array('Sujeto expreso-predicado verbal','',0,0,1);
+I[20][3][1]=new Array('Sujeto expreso-predicado nominal','',1,100,1);
+I[20][3][2]=new Array('Sujeto t\u00E1cito-predicado verbal','',0,0,1);
+I[20][3][3]=new Array('Sujeto t\u00E1cito-predicado nominal','',0,0,1);
+I[21]=new Array();I[21][0]=100;
+I[21][1]='';
+I[21][2]='0';
+I[21][3]=new Array();
+I[21][3][0]=new Array('Sujeto expreso-predicado verbal','',0,0,1);
+I[21][3][1]=new Array('Sujeto expreso-predicado nominal','',0,0,1);
+I[21][3][2]=new Array('Sujeto t\u00E1cito-predicado verbal','',1,100,1);
+I[21][3][3]=new Array('Sujeto t\u00E1cito-predicado nominal','',0,0,1);
+I[22]=new Array();I[22][0]=100;
+I[22][1]='';
+I[22][2]='0';
+I[22][3]=new Array();
+I[22][3][0]=new Array('Sujeto expreso-predicado verbal','',1,100,1);
+I[22][3][1]=new Array('Sujeto expreso-predicado nominal','',0,0,1);
+I[22][3][2]=new Array('Sujeto t\u00E1cito-predicado verbal','',0,0,1);
+I[22][3][3]=new Array('Sujeto t\u00E1cito-predicado nominal','',0,0,1);
+I[23]=new Array();I[23][0]=100;
+I[23][1]='';
+I[23][2]='0';
+I[23][3]=new Array();
+I[23][3][0]=new Array('que lleva pollino','',1,100,1);
+I[23][3][1]=new Array('La burra no va derecho al molino','',0,0,1);
+I[23][3][2]=new Array('Derecho al molino','',0,0,1);
+I[23][3][3]=new Array('La burra','',0,0,1);
+I[24]=new Array();I[24][0]=100;
+I[24][1]='';
+I[24][2]='0';
+I[24][3]=new Array();
+I[24][3][0]=new Array('El pa\u00EDs sorprendi\u00F3 al mundo','',0,0,1);
+I[24][3][1]=new Array('El pa\u00EDs que juzg\u00F3 a su presidente','',0,0,1);
+I[24][3][2]=new Array('que juzg\u00F3 a su presidente','',1,100,1);
+I[24][3][3]=new Array('sorprendi\u00F3 al mundo','',0,0,1);
+I[25]=new Array();I[25][0]=100;
+I[25][1]='';
+I[25][2]='0';
+I[25][3]=new Array();
+I[25][3][0]=new Array('me saluda','',0,0,1);
+I[25][3][1]=new Array('Cuando me saluda','',0,0,1);
+I[25][3][2]=new Array('me ve','',0,0,1);
+I[25][3][3]=new Array('Cuando me ve','',1,100,1);
+I[26]=new Array();I[26][0]=100;
+I[26][1]='';
+I[26][2]='0';
+I[26][3]=new Array();
+I[26][3][0]=new Array('donde lo dejaste','',1,100,1);
+I[26][3][1]=new Array('Lo puse ah\u00ED','',0,0,1);
+I[26][3][2]=new Array('Lo dejaste','',0,0,1);
+I[26][3][3]=new Array('Lo puse','',0,0,1);
+I[27]=new Array();I[27][0]=100;
+I[27][1]='';
+I[27][2]='0';
+I[27][3]=new Array();
+I[27][3][0]=new Array('la mujer que estaba gritando','',0,0,1);
+I[27][3][1]=new Array('estaba gritando','',0,0,1);
+I[27][3][2]=new Array('que estaba gritando','',0,0,1);
+I[27][3][3]=new Array('Socorrieron a la mujer','',1,100,1);
+I[28]=new Array();I[28][0]=100;
+I[28][1]='';
+I[28][2]='0';
+I[28][3]=new Array();
+I[28][3][0]=new Array('Si te apuras','',0,0,1);
+I[28][3][1]=new Array('llegar\u00E1s sin contratiempos','',1,100,1);
+I[28][3][2]=new Array('te apuras','',0,0,1);
+I[28][3][3]=new Array('te apuras sin contratiempos','',0,0,1);
+I[29]=new Array();I[29][0]=100;
+I[29][1]='';
+I[29][2]='0';
+I[29][3]=new Array();
+I[29][3][0]=new Array('que viste de amarillo','',1,100,1);
+I[29][3][1]=new Array('Trajeron un regalo para la ni\u00F1a','',1,100,1);
+I[29][3][2]=new Array('Trajeron un regalo','',0,0,1);
+I[29][3][3]=new Array('la ni\u00F1a que viste de amarillo','',0,0,1);
+I[30]=new Array();I[30][0]=100;
+I[30][1]='';
+I[30][2]='0';
+I[30][3]=new Array();
+I[30][3][0]=new Array('Aquellos diligentes trabajadores no estaban enterados de su desesperada situaci\u00F3n','',1,100,1);
+I[30][3][1]=new Array('que por lo visto','',0,0,1);
+I[30][3][2]=new Array('que por lo visto no hab\u00EDan le\u00EDdo sus contratos','',0,0,1);
+I[30][3][3]=new Array('no hab\u00EDan le\u00EDdo sus contratos','',0,0,1);
+I[31]=new Array();I[31][0]=100;
+I[31][1]='';
+I[31][2]='0';
+I[31][3]=new Array();
+I[31][3][0]=new Array('Inauguraron','',0,0,1);
+I[31][3][1]=new Array('que estaba reci\u00E9n pintada','',0,0,1);
+I[31][3][2]=new Array('Inauguraron la alberca','',1,100,1);
+I[31][3][3]=new Array('la alberca que estaba','',0,0,1);
+I[32]=new Array();I[32][0]=100;
+I[32][1]='';
+I[32][2]='0';
+I[32][3]=new Array();
+I[32][3][0]=new Array('Ana','',0,0,1);
+I[32][3][1]=new Array('una poes\u00EDa','',1,100,1);
+I[32][3][2]=new Array('a su madre','',0,0,1);
+I[32][3][3]=new Array('en el auditorio','',0,0,1);
+I[33]=new Array();I[33][0]=100;
+I[33][1]='';
+I[33][2]='0';
+I[33][3]=new Array();
+I[33][3][0]=new Array('Nunca','',1,100,1);
+I[33][3][1]=new Array('digas','',0,0,1);
+I[33][3][2]=new Array('de esta agua','',0,0,1);
+I[33][3][3]=new Array('de esta agua no beber\u00E9','',0,0,1);
+I[34]=new Array();I[34][0]=100;
+I[34][1]='';
+I[34][2]='0';
+I[34][3]=new Array();
+I[34][3][0]=new Array('El pr\u00F3ximo mes','',0,0,1);
+I[34][3][1]=new Array('ir\u00E9 a Europa','',0,0,1);
+I[34][3][2]=new Array('a Europa','',0,0,1);
+I[34][3][3]=new Array('con mi abuela','',1,100,1);
+I[35]=new Array();I[35][0]=100;
+I[35][1]='';
+I[35][2]='0';
+I[35][3]=new Array();
+I[35][3][0]=new Array('aquella misteriosa nota','',0,0,1);
+I[35][3][1]=new Array('R\u00E1pidamente','',1,100,1);
+I[35][3][2]=new Array('debajo de la almohada','',0,0,1);
+I[35][3][3]=new Array('ocult\u00F3','',0,0,1);
+I[36]=new Array();I[36][0]=100;
+I[36][1]='';
+I[36][2]='0';
+I[36][3]=new Array();
+I[36][3][0]=new Array('el peligro','',0,0,1);
+I[36][3][1]=new Array('constantemente','',0,0,1);
+I[36][3][2]=new Array('advert\u00ED','',0,0,1);
+I[36][3][3]=new Array('Os','',1,100,1);
+I[37]=new Array();I[37][0]=100;
+I[37][1]='';
+I[37][2]='0';
+I[37][3]=new Array();
+I[37][3][0]=new Array('Las','',0,0,1);
+I[37][3][1]=new Array('encontr\u00E9','',0,0,1);
+I[37][3][2]=new Array('en el suelo','',1,100,1);
+I[37][3][3]=new Array('ayer','',0,0,1);
+I[38]=new Array();I[38][0]=100;
+I[38][1]='';
+I[38][2]='0';
+I[38][3]=new Array();
+I[38][3][0]=new Array('en la pared oriental cerca del campanario','',1,100,1);
+I[38][3][1]=new Array('Escribieron el mensaje','',0,0,1);
+I[38][3][2]=new Array('el mensaje','',0,0,1);
+I[38][3][3]=new Array('en la pared','',0,0,1);
+I[39]=new Array();I[39][0]=100;
+I[39][1]='';
+I[39][2]='0';
+I[39][3]=new Array();
+I[39][3][0]=new Array('cantando','',0,0,1);
+I[39][3][1]=new Array('con gran entusiasmo','',0,0,1);
+I[39][3][2]=new Array('mi canci\u00F3n preferida','',1,100,1);
+I[39][3][3]=new Array('Ana lleg\u00F3','',0,0,1);
+I[40]=new Array();I[40][0]=100;
+I[40][1]='';
+I[40][2]='0';
+I[40][3]=new Array();
+I[40][3][0]=new Array('el peque\u00F1o Juan','',0,0,1);
+I[40][3][1]=new Array('a sus incr\u00E9dulos hermanos','',1,100,1);
+I[40][3][2]=new Array('Todas las ma\u00F1anas','',0,0,1);
+I[40][3][3]=new Array('Todas las ma\u00F1anas','',0,0,1);
+I[41]=new Array();I[41][0]=100;
+I[41][1]='';
+I[41][2]='0';
+I[41][3]=new Array();
+I[41][3][0]=new Array('El cuerpo de bomberos','',0,0,1);
+I[41][3][1]=new Array('por el alcalde','',1,100,1);
+I[41][3][2]=new Array('en la plza p\u00FAblica','',0,0,1);
+I[41][3][3]=new Array('fue condecorado','',0,0,1);
+I[42]=new Array();I[42][0]=100;
+I[42][1]='';
+I[42][2]='0';
+I[42][3]=new Array();
+I[42][3][0]=new Array('por hombres codiciosos','',1,100,1);
+I[42][3][1]=new Array('Grandes extensiones de bosque','',0,0,1);
+I[42][3][2]=new Array('son taladas','',0,0,1);
+I[42][3][3]=new Array('bosque','',0,0,1);
+I[43]=new Array();I[43][0]=100;
+I[43][1]='';
+I[43][2]='0';
+I[43][3]=new Array();
+I[43][3][0]=new Array('ma\u00F1ana','',0,0,1);
+I[43][3][1]=new Array('estaremos terminando','',0,0,1);
+I[43][3][2]=new Array('la tarea encomendada','',1,100,1);
+I[43][3][3]=new Array('la tarea','',0,0,1);
+I[44]=new Array();I[44][0]=100;
+I[44][1]='';
+I[44][2]='0';
+I[44][3]=new Array();
+I[44][3][0]=new Array('Me sent\u00EDa ingr\u00E1vido y mis dolencias no cesaban. Estaba a punto de sucumbir a la infecci\u00F3n y s\u00F3lo me preguntaba si volver\u00EDa a ver la luz del sol','',0,0,1);
+I[44][3][1]=new Array('Aquella misteriosa pieza me parec\u00EDa m\u00E1s rara que la primera. Nunca supe si flotaba o si estaba a punto de volar dirigi\u00E9ndose a mis ojos','',0,0,1);
+I[44][3][2]=new Array('La pieza, que ten\u00EDa la forma de un cubo, pesaba 300 gramos y era de color azul','',1,100,1);
+I[44][3][3]=new Array('No lo s\u00E9. No me pregunten. Me desconect\u00E9 de la realidad justo cuando estaba a punto de suceder tan magno evento. Me lo perd\u00ED','',0,0,1);
+I[45]=new Array();I[45][0]=100;
+I[45][1]='';
+I[45][2]='0';
+I[45][3]=new Array();
+I[45][3][0]=new Array('Enrique fue el primero en llegar. Nuestras versiones coinciden en que al llegar cada uno de nosotros \u00E9l ya estaba ah\u00ED','',0,0,1);
+I[45][3][1]=new Array('Ah\u00ED estaba frente a nuestros ojos. Pudimos pesarlo o analizar su textura, pero nada de eso hicimos','',0,0,1);
+I[45][3][2]=new Array('Enrique fue el primero en se\u00F1alar su origen alien\u00EDgena y su procedencia de la constelaci\u00F3n de Ori\u00F3n','',1,100,1);
+I[45][3][3]=new Array('Al examinarla pudimos apreciar que irradiaba cierta iridiscencia. Similar al bismuto, pero con destellos mucho m\u00E1s intensos','',0,0,1);
+I[46]=new Array();I[46][0]=100;
+I[46][1]='';
+I[46][2]='0';
+I[46][3]=new Array();
+I[46][3][0]=new Array('Pablo, por el contrario, s\u00F3lo se\u00F1alaba que ser\u00EDa un excelente pisa papel en su escritorio ya de por s\u00ED desordenado','',1,100,1);
+I[46][3][1]=new Array('Ten\u00EDamos un acuerdo y nadie se atrever\u00EDa a quebrantarlo. Guardar\u00EDamos el secreto hasta decidir qu\u00E9 har\u00EDamos con aquella pieza','',0,0,1);
+I[46][3][2]=new Array('Aunque todos dese\u00E1bamos tocar aquella roca, mineral o lo que sea; niguno se atrevi\u00F3 a hacerlo','',0,0,1);
+I[46][3][3]=new Array('Miro mi reloj y son las 4:00 pm. No s\u00E9 si la hora a la que sucedi\u00F3 nuestro descubrimiento tenga alguna relevancia. Sin embargo, as\u00ED ha quedado registrado en mi diario','',0,0,1);
+I[47]=new Array();I[47][0]=100;
+I[47][1]='';
+I[47][2]='0';
+I[47][3]=new Array();
+I[47][3][0]=new Array('Tu escritorio se ve rid\u00EDculo, le dije alguna vez. No s\u00E9 como puedes utilizarlo con ese reducido espacio y cien ch\u00E1charas encimas','',0,0,1);
+I[47][3][1]=new Array('Manchas de.... caf\u00E9? t\u00E9? Ve t\u00FA a saber qu\u00E9. Todo ese escritorio era un maldito cuadro cubista a punto sucumbir bajo cualquier peso extra','',0,0,1);
+I[47][3][2]=new Array('Si me hubieran preguntado, hubiera mando ese escritorio a la primera hoguera y disfrutado ver como ard\u00EDa','',0,0,1);
+I[47][3][3]=new Array('De aqu\u00E9l escritorio s\u00F3lo se pod\u00EDa asegurar su naturaleza met\u00E1lica y superficie rectangular de 60x120 cent\u00EDmetros','',1,100,1);
+I[48]=new Array();I[48][0]=100;
+I[48][1]='';
+I[48][2]='0';
+I[48][3]=new Array();
+I[48][3][0]=new Array('Son las 8:00 PM en el reloj de pared de la t\u00EDa y aquella pieza frente a nuestros ojos s\u00F3lo nos dec\u00EDa que era un s\u00F3lido a temperatura ambiente','',1,100,1);
+I[48][3][1]=new Array('Todo lo dem\u00E1s era incierto hasta para el m\u00E1s observador. El color era de mal gusto y sus patas remendadas combinaban madera y distintos materiales improvisados con ingenio despreocupado','',0,0,1);
+I[48][3][2]=new Array('Por fin Flavio Andr\u00E9s sugiri\u00F3: \u201CVeamos si el perro de Pablo se la puede tragar. As\u00ED sabremos al menos si es comestible\u201D. Todos lo vimos con miradas mordaces y fuimos c\u00F3mplices acusadores de su escasa mentalidad inventiva.','',0,0,1);
+I[48][3][3]=new Array('Est\u00E1 bien, analizando mi conciencia y mis \u00FAltimas decisiones, tengo que admitir que... la verdad no me gustan estos tipos de an\u00E1lisis e introspecciones','',0,0,1);
+I[49]=new Array();I[49][0]=100;
+I[49][1]='';
+I[49][2]='0';
+I[49][3]=new Array();
+I[49][3][0]=new Array('Me parece que el Monte Everest me resultar\u00EDa muy fr\u00EDo e inconveniente','',0,0,1);
+I[49][3][1]=new Array('El Monte Everest tiene una altura de 8,844 metros y est\u00E1 en Nepal','',1,100,1);
+I[49][3][2]=new Array('Verdaderamente es un monte muy alto y seguro es dificil\u00EDsimo escalar a su cima','',0,0,1);
+I[49][3][3]=new Array('Esperen, hoy me siento capaz de escalar el Everest con una sola bocanada de aire. Por si no lo han notado, me siento de maravilla','',0,0,1);
+I[50]=new Array();I[50][0]=100;
+I[50][1]='';
+I[50][2]='0';
+I[50][3]=new Array();
+I[50][3][0]=new Array('Comparaci\u00F3n o s\u00EDmil','',1,100,1);
+I[50][3][1]=new Array('Met\u00E1fora','',0,0,1);
+I[50][3][2]=new Array('Alegor\u00EDa','',0,0,1);
+I[50][3][3]=new Array('Hip\u00E9rbole','',0,0,1);
+I[51]=new Array();I[51][0]=100;
+I[51][1]='';
+I[51][2]='0';
+I[51][3]=new Array();
+I[51][3][0]=new Array('Comparaci\u00F3n o s\u00EDmil','',0,0,1);
+I[51][3][1]=new Array('Met\u00E1fora','',1,100,1);
+I[51][3][2]=new Array('Alegor\u00EDa','',0,0,1);
+I[51][3][3]=new Array('Hip\u00E9rbole','',0,0,1);
+I[52]=new Array();I[52][0]=100;
+I[52][1]='';
+I[52][2]='0';
+I[52][3]=new Array();
+I[52][3][0]=new Array('Paradoja','',0,0,1);
+I[52][3][1]=new Array('Hip\u00E9rbaton','',0,0,1);
+I[52][3][2]=new Array('Alegor\u00EDa','',0,0,1);
+I[52][3][3]=new Array('Comparaci\u00F3n o s\u00EDmil','',1,100,1);
+I[53]=new Array();I[53][0]=100;
+I[53][1]='';
+I[53][2]='0';
+I[53][3]=new Array();
+I[53][3][0]=new Array('Paradoja','',0,0,1);
+I[53][3][1]=new Array('Hip\u00E9rbaton','',0,0,1);
+I[53][3][2]=new Array('Hip\u00E9rbole','',1,100,1);
+I[53][3][3]=new Array('Met\u00E1fora','',0,0,1);
+I[54]=new Array();I[54][0]=100;
+I[54][1]='';
+I[54][2]='0';
+I[54][3]=new Array();
+I[54][3][0]=new Array('Alegor\u00EDa','',0,0,1);
+I[54][3][1]=new Array('Met\u00E1fora','',1,100,1);
+I[54][3][2]=new Array('Hip\u00E9rbole','',0,0,1);
+I[54][3][3]=new Array('Paradoja','',0,0,1);
+I[55]=new Array();I[55][0]=100;
+I[55][1]='';
+I[55][2]='0';
+I[55][3]=new Array();
+I[55][3][0]=new Array('Alegor\u00EDa','',1,100,1);
+I[55][3][1]=new Array('Comparaci\u00F3n o s\u00EDmil','',0,0,1);
+I[55][3][2]=new Array('Hip\u00E9rbaton','',0,0,1);
+I[55][3][3]=new Array('Met\u00E1fora','',0,0,1);
+I[56]=new Array();I[56][0]=100;
+I[56][1]='';
+I[56][2]='0';
+I[56][3]=new Array();
+I[56][3][0]=new Array('Hip\u00E9rbole','',0,0,1);
+I[56][3][1]=new Array('Comparaci\u00F3n o s\u00EDmil','',0,0,1);
+I[56][3][2]=new Array('Hip\u00E9rbole','',0,0,1);
+I[56][3][3]=new Array('Met\u00E1fora','',1,100,1);
+I[57]=new Array();I[57][0]=100;
+I[57][1]='';
+I[57][2]='0';
+I[57][3]=new Array();
+I[57][3][0]=new Array('Comparaci\u00F3n o s\u00EDmil','',0,0,1);
+I[57][3][1]=new Array('Alegor\u00EDa','',0,0,1);
+I[57][3][2]=new Array('Hip\u00E9rbole','',1,100,1);
+I[57][3][3]=new Array('Paradoja','',0,0,1);
+I[58]=new Array();I[58][0]=100;
+I[58][1]='';
+I[58][2]='0';
+I[58][3]=new Array();
+I[58][3][0]=new Array('Paradoja','',0,0,1);
+I[58][3][1]=new Array('Hip\u00E9rbaton','',1,100,1);
+I[58][3][2]=new Array('Alegor\u00EDa','',0,0,1);
+I[58][3][3]=new Array('Comparaci\u00F3n o s\u00EDmil','',0,0,1);
+I[59]=new Array();I[59][0]=100;
+I[59][1]='';
+I[59][2]='0';
+I[59][3]=new Array();
+I[59][3][0]=new Array('Hip\u00E9rbole','',0,0,1);
+I[59][3][1]=new Array('Alegor\u00EDa','',0,0,1);
+I[59][3][2]=new Array('Met\u00E1fora','',0,0,1);
+I[59][3][3]=new Array('Comparaci\u00F3n o s\u00EDmil','',1,100,1);
+I[60]=new Array();I[60][0]=100;
+I[60][1]='';
+I[60][2]='0';
+I[60][3]=new Array();
+I[60][3][0]=new Array('Hip\u00E9rbole','',1,100,1);
+I[60][3][1]=new Array('Alegor\u00EDa','',0,0,1);
+I[60][3][2]=new Array('Met\u00E1fora','',0,0,1);
+I[60][3][3]=new Array('Paradoja','',0,0,1);
+I[61]=new Array();I[61][0]=100;
+I[61][1]='';
+I[61][2]='0';
+I[61][3]=new Array();
+I[61][3][0]=new Array('Hip\u00E9rbaton','',0,0,1);
+I[61][3][1]=new Array('Hip\u00E9rbole','',1,100,1);
+I[61][3][2]=new Array('Met\u00E1fora','',0,0,1);
+I[61][3][3]=new Array('Comparaci\u00F3n o s\u00EDmil','',0,0,1);
+I[62]=new Array();I[62][0]=100;
+I[62][1]='';
+I[62][2]='0';
+I[62][3]=new Array();
+I[62][3][0]=new Array('Hip\u00E9rbaton','',0,0,1);
+I[62][3][1]=new Array('Alegor\u00EDa','',0,0,1);
+I[62][3][2]=new Array('Met\u00E1fora','',0,0,1);
+I[62][3][3]=new Array('Paradoja','',1,100,1);
+I[63]=new Array();I[63][0]=100;
+I[63][1]='';
+I[63][2]='0';
+I[63][3]=new Array();
+I[63][3][0]=new Array('Paradoja','',1,100,1);
+I[63][3][1]=new Array('Alegor\u00EDa','',0,0,1);
+I[63][3][2]=new Array('Met\u00E1fora','',0,0,1);
+I[63][3][3]=new Array('Comparaci\u00F3n o s\u00EDmil','',0,0,1);
+I[64]=new Array();I[64][0]=100;
+I[64][1]='';
+I[64][2]='0';
+I[64][3]=new Array();
+I[64][3][0]=new Array('Dante y Virgilio','',0,0,1);
+I[64][3][1]=new Array('Homero y Dante','',0,0,1);
+I[64][3][2]=new Array('Homero y Virgilio','',1,100,1);
+I[64][3][3]=new Array('Dante y Arist\u00F3teles','',0,0,1);
+I[65]=new Array();I[65][0]=100;
+I[65][1]='';
+I[65][2]='0';
+I[65][3]=new Array();
+I[65][3][0]=new Array('Dante y Goethe','',0,0,1);
+I[65][3][1]=new Array('Goethe y Cervantes','',0,0,1);
+I[65][3][2]=new Array('Dante y Cervantes','',1,100,1);
+I[65][3][3]=new Array('Cervantes y Dante','',0,0,1);
+I[66]=new Array();I[66][0]=100;
+I[66][1]='';
+I[66][2]='0';
+I[66][3]=new Array();
+I[66][3][0]=new Array('Juan Ruiz de Alarc\u00F3n y Joaqu\u00EDn Fern\u00E1ndez de Lizardi','',1,100,1);
+I[66][3][1]=new Array('Juan Ruiz de Alarc\u00F3n y Miguel de Cervantes Saavedra','',0,0,1);
+I[66][3][2]=new Array('Juan Ruiz de Alarc\u00F3n y Sor Juana In\u00E9s de la Cruz','',0,0,1);
+I[66][3][3]=new Array('Sor Juana In\u00E9s de la Cruz y Juan Ruiz de Alarc\u00F3n','',0,0,1);
+I[67]=new Array();I[67][0]=100;
+I[67][1]='';
+I[67][2]='0';
+I[67][3]=new Array();
+I[67][3][0]=new Array('Tolstoi','',0,0,1);
+I[67][3][1]=new Array('Dostoievsky','',1,100,1);
+I[67][3][2]=new Array('Franz Kafka','',0,0,1);
+I[67][3][3]=new Array('Goethe','',0,0,1);
+I[68]=new Array();I[68][0]=100;
+I[68][1]='';
+I[68][2]='0';
+I[68][3]=new Array();
+I[68][3][0]=new Array('Franz Kafka y Octavio Paz','',0,0,1);
+I[68][3][1]=new Array('Rodolfo Usigli y Juan Rulfo','',0,0,1);
+I[68][3][2]=new Array('Goethe y Juan Rulfo','',0,0,1);
+I[68][3][3]=new Array('Franz Kafka y Aldous Huxley','',1,100,1);
+I[69]=new Array();I[69][0]=100;
+I[69][1]='';
+I[69][2]='0';
+I[69][3]=new Array();
+I[69][3][0]=new Array('Juan Rulfo y Octavio Paz','',1,100,1);
+I[69][3][1]=new Array('Juan Rulfo y Ram\u00F3n L\u00F3pez Velarde','',0,0,1);
+I[69][3][2]=new Array('Octavio Paz y Mariano Azuela','',0,0,1);
+I[69][3][3]=new Array('Mart\u00EDn Luis Guzm\u00E1n y Rodolfo Usigli','',0,0,1);
+I[70]=new Array();I[70][0]=100;
+I[70][1]='';
+I[70][2]='0';
+I[70][3]=new Array();
+I[70][3][0]=new Array('Si algo puede suceder, suceder\u00E1','',0,0,1);
+I[70][3][1]=new Array('D\u00EDcese de las situaciones que, a pesar de que es consabido que son inofensivas, siguen causando temor','',1,100,1);
+I[70][3][2]=new Array('Los sonidos de la naturaleza tienen ciertas frecuencias nocivas para los pueblos aut\u00F3ctonos americanos','',0,0,1);
+I[70][3][3]=new Array('Los refranes acerca de las aves son falsos, pero ocasionalmente son veraces','',0,0,1);
+I[71]=new Array();I[71][0]=100;
+I[71][1]='';
+I[71][2]='0';
+I[71][3]=new Array();
+I[71][3][0]=new Array('10','',1,100,1);
+I[71][3][1]=new Array('8','',0,0,1);
+I[71][3][2]=new Array('6','',0,0,1);
+I[71][3][3]=new Array('9','',0,0,1);
+I[72]=new Array();I[72][0]=100;
+I[72][1]='';
+I[72][2]='0';
+I[72][3]=new Array();
+I[72][3][0]=new Array('un mundo que hab\u00EDa vencido las leyes de la gravedad','',0,0,1);
+I[72][3][1]=new Array('un mundo','',0,0,1);
+I[72][3][2]=new Array('El extra\u00F1o visitante','',1,100,1);
+I[72][3][3]=new Array('las leyes de la gravedad','',0,0,1);
+I[73]=new Array();I[73][0]=100;
+I[73][1]='';
+I[73][2]='0';
+I[73][3]=new Array();
+I[73][3][0]=new Array('Me visita','',1,100,1);
+I[73][3][1]=new Array('Londres','',0,0,1);
+I[73][3][2]=new Array('Cada vez que viene a Londres','',0,0,1);
+I[73][3][3]=new Array('viene a Londres','',0,0,1);
+I[74]=new Array();I[74][0]=100;
+I[74][1]='';
+I[74][2]='0';
+I[74][3]=new Array();
+I[74][3][0]=new Array('cuya recompensa suele venir mucho tiempo despu\u00E9s','',1,100,1);
+I[74][3][1]=new Array('El trabajo arduo','',0,0,1);
+I[74][3][2]=new Array('es frecuentemente evitado','',0,0,1);
+I[74][3][3]=new Array('por los incautos y desprevenidos','',0,0,1);
+I[75]=new Array();I[75][0]=100;
+I[75][1]='';
+I[75][2]='0';
+I[75][3]=new Array();
+I[75][3][0]=new Array('un decreto, desde su trono a sus s\u00FAbditos','',0,0,1);
+I[75][3][1]=new Array('un impuesto, a su pueblo, en su reino','',1,100,1);
+I[75][3][2]=new Array('en su trono, para su reina, ayer','',0,0,1);
+I[75][3][3]=new Array('una orden, para todos, en\u00E9rgicamente','',0,0,1);
+I[76]=new Array();I[76][0]=100;
+I[76][1]='';
+I[76][2]='0';
+I[76][3]=new Array();
+I[76][3][0]=new Array('Felizmente, ayer, en el parque','',0,0,1);
+I[76][3][1]=new Array('Con sus amigos, en el parque, alegremente','',0,0,1);
+I[76][3][2]=new Array('Alegremente, desde ayer, en la cima','',0,0,1);
+I[76][3][3]=new Array('R\u00E1pidamente, en el parque, con sus amigos','',1,100,1);
+I[77]=new Array();I[77][0]=100;
+I[77][1]='';
+I[77][2]='0';
+I[77][3]=new Array();
+I[77][3][0]=new Array('No, mentiras, a tus padres','',1,100,1);
+I[77][3][1]=new Array('No, a tus amigos, groser\u00EDas','',0,0,1);
+I[77][3][2]=new Array('Cuando, aquello, a tus padres','',0,0,1);
+I[77][3][3]=new Array('A tu diario, ayer, no','',0,0,1);
+I[78]=new Array();I[78][0]=100;
+I[78][1]='';
+I[78][2]='0';
+I[78][3]=new Array();
+I[78][3][0]=new Array('Yo solo se que no s\u00E9 nada. Bueno, la verdad es que si alguien me ense\u00F1ara algo ent\u00F3nces si sabr\u00EDa dos o tres cosas. Dej\u00E9 el estudio porque el no me motivaba lo suficiente. Si este me hubiera sido motivador, este camino de incertidumbre nunca lo habr\u00EDa recorrido. Mi situaci\u00F3n causa pena. D\u00EDganmelo a m\u00ED','',0,0,1);
+I[78][3][1]=new Array('Yo solo se que no se nada. Bueno, la verdad es que si alguien me ense\u00F1ara algo entonces s\u00ED sabr\u00EDa dos o tres cosas. Dej\u00E9 el estudio porque \u00E9l no me motivaba lo suficiente. Si este me hubiera sido motivador, este camino de incertidumbre nunca lo habr\u00EDa recorrido. Mi situaci\u00F3n causa pena. D\u00EDganmelo a mi','',0,0,1);
+I[78][3][2]=new Array('Yo solo se que no s\u00E9 nada. Bueno, la verdad es que si alguien me ense\u00F1ara algo entonces si sabr\u00EDa dos o tres cosas. Dej\u00E9 el estudio porque \u00E9l no me motivaba lo suficiente. Si \u00E9ste me hubiera sido motivador, este camino de incertidumbre nunca lo habr\u00EDa recorrido. Mi situaci\u00F3n causa pena. D\u00EDganmelo a m\u00ED','',0,0,1);
+I[78][3][3]=new Array('Yo solo s\u00E9 que no s\u00E9 nada. Bueno, la verdad es que si alguien me ense\u00F1ara algo entonces s\u00ED sabr\u00EDa dos o tres cosas. Dej\u00E9 el estudio porque \u00E9l no me motivaba lo suficiente. Si \u00E9ste me hubiera sido motivador, este camino de incertidumbre nunca lo habr\u00EDa recorrido. Mi situaci\u00F3n causa pena. D\u00EDganmelo a m\u00ED','',1,100,1);
+I[79]=new Array();I[79][0]=100;
+I[79][1]='';
+I[79][2]='0';
+I[79][3]=new Array();
+I[79][3][0]=new Array('noso','',1,100,1);
+I[79][3][1]=new Array('luso','',0,0,1);
+I[79][3][2]=new Array('noma','',0,0,1);
+I[79][3][3]=new Array('nalu','',0,0,1);
+I[80]=new Array();I[80][0]=100;
+I[80][1]='';
+I[80][2]='0';
+I[80][3]=new Array();
+I[80][3][0]=new Array('toco','',0,0,1);
+I[80][3][1]=new Array('rato','',0,0,1);
+I[80][3][2]=new Array('misa','',1,100,1);
+I[80][3][3]=new Array('pesa','',0,0,1);
+I[81]=new Array();I[81][0]=100;
+I[81][1]='';
+I[81][2]='0';
+I[81][3]=new Array();
+I[81][3][0]=new Array('nato','',0,0,1);
+I[81][3][1]=new Array('sodu','',0,0,1);
+I[81][3][2]=new Array('naso','',0,0,1);
+I[81][3][3]=new Array('sosu','',1,100,1);
+I[82]=new Array();I[82][0]=100;
+I[82][1]='';
+I[82][2]='0';
+I[82][3]=new Array();
+I[82][3][0]=new Array('Pedro tuvo el fin de todos los mentirosos, cuando dijo la verdad nadie le crey\u00F3','',0,0,1);
+I[82][3][1]=new Array('Las \u00FAltimas voces fueron escuchadas con m\u00E1s fuerza','',1,100,1);
+I[82][3][2]=new Array('A fin de cuentas, la Historia nos ha ense\u00F1ado que el fin no justifica los medios','',0,0,1);
+I[82][3][3]=new Array('Eso explica tu conducta, pero no la justifica','',0,0,1);
+I[83]=new Array();I[83][0]=100;
+I[83][1]='';
+I[83][2]='0';
+I[83][3]=new Array();
+I[83][3][0]=new Array('La comodidad que busca el ego\u00EDsta es normalmente incomodidad para los que le rodean','',0,0,1);
+I[83][3][1]=new Array('Todas las familias felices comparten rasgos semejantes y se parecen. En cambio, las familias infelices cada una es infeliz a su manera','',0,0,1);
+I[83][3][2]=new Array('Ancha es la puerta que conduce a la perdici\u00F3n y muchos pasan por ella. En cambio, angosta es la puerta que conduce a la rectitud y pocos son los que la atraviesan','',0,0,1);
+I[83][3][3]=new Array('Todos los hombres son mortales. S\u00F3crates es hombre. Entonces, S\u00F3crates es mortal','',1,100,1);
+I[84]=new Array();I[84][0]=100;
+I[84][1]='';
+I[84][2]='0';
+I[84][3]=new Array();
+I[84][3][0]=new Array('El servir es un rasgo de seres superiores','',0,0,1);
+I[84][3][1]=new Array('Podemos hacer peque\u00F1os servicios que en realidad son muy valiosos','',0,0,1);
+I[84][3][2]=new Array('La Creaci\u00F3n no necesita ser mejorada','',1,100,1);
+I[84][3][3]=new Array('El servir trae consigo su propia satisfacci\u00F3n','',0,0,1);
+I[85]=new Array();I[85][0]=100;
+I[85][1]='';
+I[85][2]='0';
+I[85][3]=new Array();
+I[85][3][0]=new Array('Cantar del M\u00EDo Cid','',1,100,1);
+I[85][3][1]=new Array('Popol Vuh','',0,0,1);
+I[85][3][2]=new Array('Don Quijote de la Mancha','',0,0,1);
+I[85][3][3]=new Array('La divina comedia','',0,0,1);
+I[86]=new Array();I[86][0]=100;
+I[86][1]='';
+I[86][2]='0';
+I[86][3]=new Array();
+I[86][3][0]=new Array('Popol Vuh','',1,100,1);
+I[86][3][1]=new Array('La divina comedia','',0,0,1);
+I[86][3][2]=new Array('Don Quijote de la Mancha','',0,0,1);
+I[86][3][3]=new Array('Cantar del M\u00EDo Cid','',0,0,1);
+I[87]=new Array();I[87][0]=100;
+I[87][1]='';
+I[87][2]='0';
+I[87][3]=new Array();
+I[87][3][0]=new Array('Cantar del M\u00EDo Cid','',0,0,1);
+I[87][3][1]=new Array('Popol Vuh','',0,0,1);
+I[87][3][2]=new Array('Don Quijote de la Mancha','',1,100,1);
+I[87][3][3]=new Array('La divina comedia','',0,0,1);
+I[88]=new Array();I[88][0]=100;
+I[88][1]='';
+I[88][2]='0';
+I[88][3]=new Array();
+I[88][3][0]=new Array('Cantar del M\u00EDo Cid','',0,0,1);
+I[88][3][1]=new Array('Don Quijote de la Mancha','',0,0,1);
+I[88][3][2]=new Array('Popol Vuh','',0,0,1);
+I[88][3][3]=new Array('La divina comedia','',1,100,1);
+
+
+function StartUp(){
+
+//If there's only one question, no need for question navigation controls
+	if (QsToShow < 2){
+		document.getElementById('QNav').style.display = 'none';
+	}
+	
+//Stash the instructions so they can be redisplayed
+	strInstructions = document.getElementById('InstructionsDiv').innerHTML;
+	
+
+	
+
+	
+
+	
+	CompleteEmptyFeedback();
+
+	SetUpQuestions();
+	ClearTextBoxes();
+	CreateStatusArray();
+	
+
+	
+//Check search string for q parameter
+	if (document.location.search.length > 0){
+		if (ShuffleQs == false){
+			var JumpTo = parseInt(document.location.search.substring(1,document.location.search.length))-1;
+			if (JumpTo <= QsToShow){
+				ChangeQ(JumpTo);
+			}
+		}
+	}
+//Undocumented function added 10/12/2004
+	ShowSpecialReadingForQuestion();
+}
+
+function ShowHideQuestions(){
+	document.getElementById('ShowMethodButton').style.display = 'none';
+	if (ShowingAllQuestions == false){
+		for (var i=0; i<QArray.length; i++){
+				QArray[i].style.display = '';
+			}
+		document.getElementById('Questions').style.listStyleType = 'decimal';
+		document.getElementById('OneByOneReadout').style.display = 'none';
+		document.getElementById('ShowMethodButton').innerHTML = ShowOneByOneCaption;
+		ShowingAllQuestions = true;
+	}
+	else{
+		for (var i=0; i<QArray.length; i++){
+				if (i != CurrQNum){
+					QArray[i].style.display = 'none';
+				}
+			}
+		document.getElementById('Questions').style.listStyleType = 'none';
+		document.getElementById('OneByOneReadout').style.display = '';
+		document.getElementById('ShowMethodButton').innerHTML = ShowAllQuestionsCaption;
+		ShowingAllQuestions = false;	
+	}
+	document.getElementById('ShowMethodButton').style.display = 'inline';
+}
+
+function CreateStatusArray(){
+	var QNum, ANum;
+//For each item in the item array
+	for (QNum=0; QNum<I.length; QNum++){
+//Check if the question still exists (hasn't been nuked by showing a random selection)
+		if (document.getElementById('Q_' + QNum) != null){
+			State[QNum] = new Array();
+			State[QNum][0] = -1; //Score for this q; -1 shows question not done yet
+			State[QNum][1] = new Array(); //answers
+			for (ANum = 0; ANum<I[QNum][3].length; ANum++){
+				State[QNum][1][ANum] = 0; //answer not chosen yet; when chosen, will store its position in the series of choices
+			}
+			State[QNum][2] = 0; //tries at this q so far
+			State[QNum][3] = 0; //incrementing percent-correct values of selected answers
+			State[QNum][4] = 0; //penalties incurred for hints
+			State[QNum][5] = ''; //Sequence of answers chosen by number
+		}
+		else{
+			State[QNum] = null;
+		}
+	}
+}
+
+
+
+function CheckMCAnswer(QNum, ANum, Btn){
+//if question doesn't exist, bail
+	if (State[QNum].length < 1){return;}
+	
+//Get the feedback
+	Feedback = I[QNum][3][ANum][1];
+	
+//Now show feedback and bail if question already complete
+	if (State[QNum][0] > -1){
+//Add an extra message explaining that the question
+// is finished if defined by the user
+		if (strQuestionFinished.length > 0){Feedback += '<br />' + strQuestionFinished;}
+//Show the feedback
+		ShowMessage(Feedback);
+//New for 6.2.2.1: If you want to mark an answer as correct even when it's the final choice, uncomment this line.
+//		if (I[QNum][3][ANum][2] >= 1){Btn.innerHTML = CorrectIndicator;}else{Btn.innerHTML = IncorrectIndicator;}	
+		return;
+	}
+	
+//Hide the button while processing
+	Btn.style.display = 'none';
+
+//Increment the number of tries
+	State[QNum][2]++;
+	
+//Add the percent-correct value of this answer
+	State[QNum][3] += I[QNum][3][ANum][3];
+	
+//Store the try number in the answer part of the State array, for tracking purposes
+	State[QNum][1][ANum] = State[QNum][2];
+	if (State[QNum][5].length > 0){State[QNum][5] += ' | ';}
+	State[QNum][5] += String.fromCharCode(65+ANum);
+	
+//Should this answer be accepted as correct?
+	if (I[QNum][3][ANum][2] < 1){
+//It's wrong
+
+//Mark the answer
+		Btn.innerHTML = IncorrectIndicator;
+		
+//Remove any previous score unless exercise is finished (6.0.3.8+)
+		if (Finished == false){
+			WriteToInstructions(strInstructions);
+		}	
+		
+//Check whether this leaves just one MC answer unselected, in which case the Q is terminated
+		var RemainingAnswer = FinalAnswer(QNum);
+		if (RemainingAnswer > -1){
+//Behave as if the last answer had been selected, but give no credit for it
+//Increment the number of tries
+			State[QNum][2]++;		
+		
+//Calculate the score for this question
+			CalculateMCQuestionScore(QNum);
+			
+//Get the overall score and add it to the feedback
+			CalculateOverallScore();
+//New for 6.2.2.1
+			var QsDone = CheckQuestionsCompleted();
+			if ((ContinuousScoring == true)||(Finished == true)){
+				Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
+				WriteToInstructions(YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone);
+			}
+			else{
+				WriteToInstructions(QsDone);
+			}
+		}
+	}
+	else{
+//It's right
+//Mark the answer
+		Btn.innerHTML = CorrectIndicator;
+				
+//Calculate the score for this question
+		CalculateMCQuestionScore(QNum);
+		
+//New for 6.2.2.0
+		var QsDone = CheckQuestionsCompleted();
+
+//Get the overall score and add it to the feedback
+		if (ContinuousScoring == true){
+			CalculateOverallScore();
+			if ((ContinuousScoring == true)||(Finished == true)){
+				Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
+				WriteToInstructions(YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone);
+			}
+		}
+		else{
+			WriteToInstructions(QsDone);
+		}
+	}
+	
+//Show the button again
+	Btn.style.display = 'inline';
+	
+//Finally, show the feedback	
+	ShowMessage(Feedback);
+	
+//Check whether all questions are now done
+	CheckFinished();
+}
+
+function CalculateMCQuestionScore(QNum){
+	var Tries = State[QNum][2] + State[QNum][4]; //include tries and hint penalties
+	var PercentCorrect = State[QNum][3];
+	var TotAns = GetTotalMCAnswers(QNum);
+	var HintPenalties = State[QNum][4];
+	
+//Make sure it's not already complete
+
+	if (State[QNum][0] < 0){
+//Allow for Hybrids
+		if (HintPenalties >= 1){
+			State[QNum][0] = 0;
+		}
+		else{
+//This line calculates the score for this question
+			if (TotAns == 1){
+				State[QNum][0] = 1;
+			}
+			else{
+				State[QNum][0] = ((TotAns-((Tries*100)/State[QNum][3]))/(TotAns-1));
+			}
+		}
+//Fix for Safari bug added for version 6.0.3.42 (negative infinity problem)
+		if ((State[QNum][0] < 0)||(State[QNum][0] == Number.NEGATIVE_INFINITY)){
+			State[QNum][0] = 0;
+		}
+	}
+}
+
+function GetTotalMCAnswers(QNum){
+	var Result = 0;
+	for (var ANum=0; ANum<I[QNum][3].length; ANum++){
+		if (I[QNum][3][ANum][4] == 1){ //This is an MC answer
+			Result++;
+		}
+	}
+	return Result;
+}
+
+function FinalAnswer(QNum){
+	var UnchosenAnswers = 0;
+	var FinalAnswer = -1;
+	for (var ANum=0; ANum<I[QNum][3].length; ANum++){
+		if (I[QNum][3][ANum][4] == 1){ //This is an MC answer
+			if (State[QNum][1][ANum] < 1){ //This answer hasn't been chosen yet
+				UnchosenAnswers++;
+				FinalAnswer = ANum;
+			}
+		}
+	}
+	if (UnchosenAnswers == 1){
+		return FinalAnswer;
+	}
+	else{
+		return -1;
+	}
+}
+
+
+
+
+
+function CalculateOverallScore(){
+	var TotalWeighting = 0;
+	var TotalScore = 0;
+	
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] > -1){
+				TotalWeighting += I[QNum][0];
+				TotalScore += (I[QNum][0] * State[QNum][0]);
+			}
+		}
+	}
+	if (TotalWeighting > 0){
+		Score = Math.floor((TotalScore/TotalWeighting)*100);
+	}
+	else{
+//if TotalWeighting is 0, no questions so far have any value, so 
+//no penalty should be shown.
+		Score = 100; 
+	}
+}
+
+//New for 6.2.2.0
+function CheckQuestionsCompleted(){
+	if (ShowCompletedSoFar == false){return '';}
+	var QsCompleted = 0;
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] >= 0){
+				QsCompleted++;
+			}
+		}
+	}
+//Fixes for 6.2.2.2
+	if (QsCompleted >= QArray.length){
+		return ExerciseCompleted;
+	}
+	else{
+		return CompletedSoFar + ' ' + QsCompleted + '/' + QArray.length + '.';
+	}
+}
+
+function CheckFinished(){
+	var FB = '';
+	var AllDone = true;
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] < 0){
+				AllDone = false;
+			}
+		}
+	}
+	if (AllDone == true){
+	
+//Report final score and submit if necessary
+		CalculateOverallScore();
+		FB = YourScoreIs + ' ' + Score + '%.';
+		if (ShowCorrectFirstTime == true){
+			var CFT = 0;
+			for (QNum=0; QNum<State.length; QNum++){
+				if (State[QNum] != null){
+					if (State[QNum][0] >= 1){
+						CFT++;
+					}
+				}
+			}
+			FB += '<br />' + CorrectFirstTime + ' ' + CFT + '/' + QsToShow;
+		}
+		
+//New for 6.2.2.0
+		FB += '<br />' + ExerciseCompleted;
+		
+		WriteToInstructions(FB);
+		
+		Finished == true;
+
+
+
+
+		TimeOver = true;
+		Locked = true;
+		
+
+
+		Finished = true;
+		Detail = '<?xml version="1.0"?><hpnetresult><fields>';
+		for (QNum=0; QNum<State.length; QNum++){
+			if (State[QNum] != null){
+				if (State[QNum][5].length > 0){
+					Detail += '<field><fieldname>Question #' + (QNum+1) + '</fieldname><fieldtype>question-tracking</fieldtype><fieldlabel>Q ' + (QNum+1) + '</fieldlabel><fieldlabelid>QuestionTrackingField</fieldlabelid><fielddata>' + State[QNum][5] + '</fielddata></field>';
+				}
+			}
+		}
+		Detail += '</fields></hpnetresult>';
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+//-->
+
+//]]>
+
+</script>
+
+
+</head>
+
+<body onload="StartUp()" id="TheBody" >
+
+<!-- BeginTopNavButtons -->
+
+
+<div class="NavButtonBar" id="TopNavBar">
+
+
+
+
+<button class="NavButton" onclick="location='contents.htm'; return false;"> Index </button>
+
+
+
+<button class="NavButton" onclick="location='nextpage.htm'; return false;">=&gt;</button>
+
+
+</div>
+
+
+
+<!-- EndTopNavButtons -->
+
+<div class="Titles">
+	<h2 class="ExerciseTitle">Instituto Everest. Espa&#x00F1;ol 1/3. Prof. Rodrigo J&#x00E1;come. Whatsapp 6621724029</h2>
+
+	<h3 class="ExerciseSubtitle">Quiz</h3>
+
+
+
+</div>
+
+<div id="InstructionsDiv" class="StdDiv">
+	<div id="Instructions"></div>
+</div>
+
+
+<div id="ContainerDiv">
+
+
+
+<div class="ExerciseContainer">
+
+<div id="QNav" class="QuestionNavigation">
+
+<p style="text-align: right;">
+<button id="ShowMethodButton" class="FuncButton" onclick="ShowHideQuestions(); return false;">Show all questions</button>
+</p>
+
+<div id="OneByOneReadout">
+<button id="PrevQButton" class="FuncButton" onclick="ChangeQ(-1); return false;">&lt;=</button>
+
+<span id="QNumReadout" class="QNum">&#160;</span>
+
+<button id="NextQButton" class="FuncButton" onclick="ChangeQ(1); return false;">=&gt;</button>
+<br />
+</div>
+
+</div>
+ 
+<ol class="QuizQuestions" id="Questions">
+<li class="QuizQuestion" id="Q_0" style="display: none;"><div class="QuestionText">Localice el sujeto (S): El pueblo cerca de la laguna sucumbi&#x00F3; a los embates del tiempo</div><ol class="MCAnswers"><li id="Q_0_0"><button class="FuncButton" id="Q_0_0_Btn" onclick="CheckMCAnswer(0,0,this)">?</button>&#160;&#160;El pueblo</li><li id="Q_0_1"><button class="FuncButton" id="Q_0_1_Btn" onclick="CheckMCAnswer(0,1,this)">?</button>&#160;&#160;pueblo</li><li id="Q_0_2"><button class="FuncButton" id="Q_0_2_Btn" onclick="CheckMCAnswer(0,2,this)">?</button>&#160;&#160;El pueblo cerca de la laguna</li><li id="Q_0_3"><button class="FuncButton" id="Q_0_3_Btn" onclick="CheckMCAnswer(0,3,this)">?</button>&#160;&#160;la laguna</li></ol></li>
+<li class="QuizQuestion" id="Q_1" style="display: none;"><div class="QuestionText">Localice el sujeto (S): Como lirio entre las espinas es mi amada entre las doncellas</div><ol class="MCAnswers"><li id="Q_1_0"><button class="FuncButton" id="Q_1_0_Btn" onclick="CheckMCAnswer(1,0,this)">?</button>&#160;&#160;Como lirio entre las espinas</li><li id="Q_1_1"><button class="FuncButton" id="Q_1_1_Btn" onclick="CheckMCAnswer(1,1,this)">?</button>&#160;&#160;mi amada entre las doncellas</li><li id="Q_1_2"><button class="FuncButton" id="Q_1_2_Btn" onclick="CheckMCAnswer(1,2,this)">?</button>&#160;&#160;las doncellas</li><li id="Q_1_3"><button class="FuncButton" id="Q_1_3_Btn" onclick="CheckMCAnswer(1,3,this)">?</button>&#160;&#160;lirio entre as espinas</li></ol></li>
+<li class="QuizQuestion" id="Q_2" style="display: none;"><div class="QuestionText">Localice el sujeto (S): En las selvas inexploradas habita un elefante blanco desconocido </div><ol class="MCAnswers"><li id="Q_2_0"><button class="FuncButton" id="Q_2_0_Btn" onclick="CheckMCAnswer(2,0,this)">?</button>&#160;&#160;las selvas inexploradas</li><li id="Q_2_1"><button class="FuncButton" id="Q_2_1_Btn" onclick="CheckMCAnswer(2,1,this)">?</button>&#160;&#160;un elefante</li><li id="Q_2_2"><button class="FuncButton" id="Q_2_2_Btn" onclick="CheckMCAnswer(2,2,this)">?</button>&#160;&#160;un elefante blanco desconocido</li><li id="Q_2_3"><button class="FuncButton" id="Q_2_3_Btn" onclick="CheckMCAnswer(2,3,this)">?</button>&#160;&#160;habita</li></ol></li>
+<li class="QuizQuestion" id="Q_3" style="display: none;"><div class="QuestionText">Localice el predicado (P): Decidieron los mineros las condiciones para los nuevos contratos</div><ol class="MCAnswers"><li id="Q_3_0"><button class="FuncButton" id="Q_3_0_Btn" onclick="CheckMCAnswer(3,0,this)">?</button>&#160;&#160;Decidieron</li><li id="Q_3_1"><button class="FuncButton" id="Q_3_1_Btn" onclick="CheckMCAnswer(3,1,this)">?</button>&#160;&#160;los mineros</li><li id="Q_3_2"><button class="FuncButton" id="Q_3_2_Btn" onclick="CheckMCAnswer(3,2,this)">?</button>&#160;&#160;las condiciones</li><li id="Q_3_3"><button class="FuncButton" id="Q_3_3_Btn" onclick="CheckMCAnswer(3,3,this)">?</button>&#160;&#160;Decidieron las condiciones para los nuevos contratos</li></ol></li>
+<li class="QuizQuestion" id="Q_4" style="display: none;"><div class="QuestionText">Localice el predicado (P): Margarita lleg&#x00F3; anunciando la feliz noticia</div><ol class="MCAnswers"><li id="Q_4_0"><button class="FuncButton" id="Q_4_0_Btn" onclick="CheckMCAnswer(4,0,this)">?</button>&#160;&#160;Margarita</li><li id="Q_4_1"><button class="FuncButton" id="Q_4_1_Btn" onclick="CheckMCAnswer(4,1,this)">?</button>&#160;&#160;lleg&#x00F3;</li><li id="Q_4_2"><button class="FuncButton" id="Q_4_2_Btn" onclick="CheckMCAnswer(4,2,this)">?</button>&#160;&#160;lleg&#x00F3; anunciando la feliz noticia</li><li id="Q_4_3"><button class="FuncButton" id="Q_4_3_Btn" onclick="CheckMCAnswer(4,3,this)">?</button>&#160;&#160;lleg&#x00F3; anunciando</li></ol></li>
+<li class="QuizQuestion" id="Q_5" style="display: none;"><div class="QuestionText">Localice el predicado (P): Durante los festejos el primo de Jos&#x00E9; estuvo cantando la misma canci&#x00F3;n todo el tiempo</div><ol class="MCAnswers"><li id="Q_5_0"><button class="FuncButton" id="Q_5_0_Btn" onclick="CheckMCAnswer(5,0,this)">?</button>&#160;&#160;estuvo cantando la misma canci&#x00F3;n todo el tiempo durante los festejos</li><li id="Q_5_1"><button class="FuncButton" id="Q_5_1_Btn" onclick="CheckMCAnswer(5,1,this)">?</button>&#160;&#160;Durante los festejos</li><li id="Q_5_2"><button class="FuncButton" id="Q_5_2_Btn" onclick="CheckMCAnswer(5,2,this)">?</button>&#160;&#160;el primo de Jos&#x00E9;</li><li id="Q_5_3"><button class="FuncButton" id="Q_5_3_Btn" onclick="CheckMCAnswer(5,3,this)">?</button>&#160;&#160;estuvo cantando</li></ol></li>
+<li class="QuizQuestion" id="Q_6" style="display: none;"><div class="QuestionText">Localice el n&#x00FA;cleo del sujeto (NS): Compraron los materiales necesarios aquellos carpinteros</div><ol class="MCAnswers"><li id="Q_6_0"><button class="FuncButton" id="Q_6_0_Btn" onclick="CheckMCAnswer(6,0,this)">?</button>&#160;&#160;los materiales</li><li id="Q_6_1"><button class="FuncButton" id="Q_6_1_Btn" onclick="CheckMCAnswer(6,1,this)">?</button>&#160;&#160;carpinteros</li><li id="Q_6_2"><button class="FuncButton" id="Q_6_2_Btn" onclick="CheckMCAnswer(6,2,this)">?</button>&#160;&#160;aquellos carpinteros</li><li id="Q_6_3"><button class="FuncButton" id="Q_6_3_Btn" onclick="CheckMCAnswer(6,3,this)">?</button>&#160;&#160;compraron</li></ol></li>
+<li class="QuizQuestion" id="Q_7" style="display: none;"><div class="QuestionText">Localice el n&#x00FA;cleo del sujeto (NS): Aquel grupo de estudiantes fue a la biblioteca</div><ol class="MCAnswers"><li id="Q_7_0"><button class="FuncButton" id="Q_7_0_Btn" onclick="CheckMCAnswer(7,0,this)">?</button>&#160;&#160;Aquel grupo de estudiantes</li><li id="Q_7_1"><button class="FuncButton" id="Q_7_1_Btn" onclick="CheckMCAnswer(7,1,this)">?</button>&#160;&#160;grupo</li><li id="Q_7_2"><button class="FuncButton" id="Q_7_2_Btn" onclick="CheckMCAnswer(7,2,this)">?</button>&#160;&#160;estudiantes</li><li id="Q_7_3"><button class="FuncButton" id="Q_7_3_Btn" onclick="CheckMCAnswer(7,3,this)">?</button>&#160;&#160;la biblioteca</li></ol></li>
+<li class="QuizQuestion" id="Q_8" style="display: none;"><div class="QuestionText">Localice el n&#x00FA;cleo del sujeto (NS): Quiero ir r&#x00E1;pidamente a Jalisco</div><ol class="MCAnswers"><li id="Q_8_0"><button class="FuncButton" id="Q_8_0_Btn" onclick="CheckMCAnswer(8,0,this)">?</button>&#160;&#160;Jalisco</li><li id="Q_8_1"><button class="FuncButton" id="Q_8_1_Btn" onclick="CheckMCAnswer(8,1,this)">?</button>&#160;&#160;Quiero ir</li><li id="Q_8_2"><button class="FuncButton" id="Q_8_2_Btn" onclick="CheckMCAnswer(8,2,this)">?</button>&#160;&#160;r&#x00E1;pidamente</li><li id="Q_8_3"><button class="FuncButton" id="Q_8_3_Btn" onclick="CheckMCAnswer(8,3,this)">?</button>&#160;&#160;(sujeto t&#x00E1;cito)</li></ol></li>
+<li class="QuizQuestion" id="Q_9" style="display: none;"><div class="QuestionText">Localice el n&#x00FA;cleo del sujeto (NP): Las estirpes marcadas con cien a&#x00F1;os de soledad no tienen una segunda oportunidad sobre la tierra</div><ol class="MCAnswers"><li id="Q_9_0"><button class="FuncButton" id="Q_9_0_Btn" onclick="CheckMCAnswer(9,0,this)">?</button>&#160;&#160;estirpes</li><li id="Q_9_1"><button class="FuncButton" id="Q_9_1_Btn" onclick="CheckMCAnswer(9,1,this)">?</button>&#160;&#160;no tienen</li><li id="Q_9_2"><button class="FuncButton" id="Q_9_2_Btn" onclick="CheckMCAnswer(9,2,this)">?</button>&#160;&#160;tienen</li><li id="Q_9_3"><button class="FuncButton" id="Q_9_3_Btn" onclick="CheckMCAnswer(9,3,this)">?</button>&#160;&#160;cien a&#x00F1;os de soledad</li></ol></li>
+<li class="QuizQuestion" id="Q_10" style="display: none;"><div class="QuestionText">Localice el n&#x00FA;cleo del sujeto (NP): No discutas la verdad con adictos a las mentiras</div><ol class="MCAnswers"><li id="Q_10_0"><button class="FuncButton" id="Q_10_0_Btn" onclick="CheckMCAnswer(10,0,this)">?</button>&#160;&#160;discutas</li><li id="Q_10_1"><button class="FuncButton" id="Q_10_1_Btn" onclick="CheckMCAnswer(10,1,this)">?</button>&#160;&#160;No discutas</li><li id="Q_10_2"><button class="FuncButton" id="Q_10_2_Btn" onclick="CheckMCAnswer(10,2,this)">?</button>&#160;&#160;la verdad</li><li id="Q_10_3"><button class="FuncButton" id="Q_10_3_Btn" onclick="CheckMCAnswer(10,3,this)">?</button>&#160;&#160;mentiras</li></ol></li>
+<li class="QuizQuestion" id="Q_11" style="display: none;"><div class="QuestionText">Clasifique la siguiente oraci&#x00F3;n de acuerdo a su sujeto y predicado: Haremos todo cuanto nos has dicho</div><ol class="MCAnswers"><li id="Q_11_0"><button class="FuncButton" id="Q_11_0_Btn" onclick="CheckMCAnswer(11,0,this)">?</button>&#160;&#160;Sujeto expreso-predicado verbal</li><li id="Q_11_1"><button class="FuncButton" id="Q_11_1_Btn" onclick="CheckMCAnswer(11,1,this)">?</button>&#160;&#160;Sujeto expreso-predicado nominal</li><li id="Q_11_2"><button class="FuncButton" id="Q_11_2_Btn" onclick="CheckMCAnswer(11,2,this)">?</button>&#160;&#160;Sujeto t&#x00E1;cito-predicado verbal</li><li id="Q_11_3"><button class="FuncButton" id="Q_11_3_Btn" onclick="CheckMCAnswer(11,3,this)">?</button>&#160;&#160;Sujeto t&#x00E1;cito-predicado nominal</li></ol></li>
+<li class="QuizQuestion" id="Q_12" style="display: none;"><div class="QuestionText">Clasifique la siguiente oraci&#x00F3;n de acuerdo a su sujeto y predicado: Salom&#x00F3;n declam&#x00F3; aquel verso extraordinario</div><ol class="MCAnswers"><li id="Q_12_0"><button class="FuncButton" id="Q_12_0_Btn" onclick="CheckMCAnswer(12,0,this)">?</button>&#160;&#160;Sujeto expreso-predicado verbal</li><li id="Q_12_1"><button class="FuncButton" id="Q_12_1_Btn" onclick="CheckMCAnswer(12,1,this)">?</button>&#160;&#160;Sujeto expreso-predicado nominal</li><li id="Q_12_2"><button class="FuncButton" id="Q_12_2_Btn" onclick="CheckMCAnswer(12,2,this)">?</button>&#160;&#160;Sujeto t&#x00E1;cito-predicado verbal</li><li id="Q_12_3"><button class="FuncButton" id="Q_12_3_Btn" onclick="CheckMCAnswer(12,3,this)">?</button>&#160;&#160;Sujeto t&#x00E1;cito-predicado nominal</li></ol></li>
+<li class="QuizQuestion" id="Q_13" style="display: none;"><div class="QuestionText">Clasifique la siguiente oraci&#x00F3;n de acuerdo a su sujeto y predicado: Eran los &#x00FA;ltimos finalistas de la competencia</div><ol class="MCAnswers"><li id="Q_13_0"><button class="FuncButton" id="Q_13_0_Btn" onclick="CheckMCAnswer(13,0,this)">?</button>&#160;&#160;Sujeto expreso-predicado verbal</li><li id="Q_13_1"><button class="FuncButton" id="Q_13_1_Btn" onclick="CheckMCAnswer(13,1,this)">?</button>&#160;&#160;Sujeto expreso-predicado nominal</li><li id="Q_13_2"><button class="FuncButton" id="Q_13_2_Btn" onclick="CheckMCAnswer(13,2,this)">?</button>&#160;&#160;Sujeto t&#x00E1;cito-predicado verbal</li><li id="Q_13_3"><button class="FuncButton" id="Q_13_3_Btn" onclick="CheckMCAnswer(13,3,this)">?</button>&#160;&#160;Sujeto t&#x00E1;cito-predicado nominal</li></ol></li>
+<li class="QuizQuestion" id="Q_14" style="display: none;"><div class="QuestionText">Clasifique la siguiente oraci&#x00F3;n de acuerdo a su sujeto y predicado: Seremos los triunfadores</div><ol class="MCAnswers"><li id="Q_14_0"><button class="FuncButton" id="Q_14_0_Btn" onclick="CheckMCAnswer(14,0,this)">?</button>&#160;&#160;Sujeto expreso-predicado verbal</li><li id="Q_14_1"><button class="FuncButton" id="Q_14_1_Btn" onclick="CheckMCAnswer(14,1,this)">?</button>&#160;&#160;Sujeto expreso-predicado nominal</li><li id="Q_14_2"><button class="FuncButton" id="Q_14_2_Btn" onclick="CheckMCAnswer(14,2,this)">?</button>&#160;&#160;Sujeto t&#x00E1;cito-predicado verbal</li><li id="Q_14_3"><button class="FuncButton" id="Q_14_3_Btn" onclick="CheckMCAnswer(14,3,this)">?</button>&#160;&#160;Sujeto t&#x00E1;cito-predicado nominal</li></ol></li>
+<li class="QuizQuestion" id="Q_15" style="display: none;"><div class="QuestionText">Clasifique la siguiente oraci&#x00F3;n de acuerdo a su sujeto y predicado: Est&#x00E1; muy f&#x00E1;cil este problema de qu&#x00ED;mica</div><ol class="MCAnswers"><li id="Q_15_0"><button class="FuncButton" id="Q_15_0_Btn" onclick="CheckMCAnswer(15,0,this)">?</button>&#160;&#160;Sujeto expreso-predicado verbal</li><li id="Q_15_1"><button class="FuncButton" id="Q_15_1_Btn" onclick="CheckMCAnswer(15,1,this)">?</button>&#160;&#160;Sujeto expreso-predicado nominal</li><li id="Q_15_2"><button class="FuncButton" id="Q_15_2_Btn" onclick="CheckMCAnswer(15,2,this)">?</button>&#160;&#160;Sujeto t&#x00E1;cito-predicado verbal</li><li id="Q_15_3"><button class="FuncButton" id="Q_15_3_Btn" onclick="CheckMCAnswer(15,3,this)">?</button>&#160;&#160;Sujeto t&#x00E1;cito-predicado nominal</li></ol></li>
+<li class="QuizQuestion" id="Q_16" style="display: none;"><div class="QuestionText">Clasifique la siguiente oraci&#x00F3;n de acuerdo a su sujeto y predicado: Los agricultores son una parte vital de la econom&#x00ED;a nacional</div><ol class="MCAnswers"><li id="Q_16_0"><button class="FuncButton" id="Q_16_0_Btn" onclick="CheckMCAnswer(16,0,this)">?</button>&#160;&#160;Sujeto expreso-predicado verbal</li><li id="Q_16_1"><button class="FuncButton" id="Q_16_1_Btn" onclick="CheckMCAnswer(16,1,this)">?</button>&#160;&#160;Sujeto expreso-predicado nominal</li><li id="Q_16_2"><button class="FuncButton" id="Q_16_2_Btn" onclick="CheckMCAnswer(16,2,this)">?</button>&#160;&#160;Sujeto t&#x00E1;cito-predicado verbal</li><li id="Q_16_3"><button class="FuncButton" id="Q_16_3_Btn" onclick="CheckMCAnswer(16,3,this)">?</button>&#160;&#160;Sujeto t&#x00E1;cito-predicado nominal</li></ol></li>
+<li class="QuizQuestion" id="Q_17" style="display: none;"><div class="QuestionText">Clasifique la siguiente oraci&#x00F3;n de acuerdo a su sujeto y predicado: Derribaron todos los altares en una sola noche</div><ol class="MCAnswers"><li id="Q_17_0"><button class="FuncButton" id="Q_17_0_Btn" onclick="CheckMCAnswer(17,0,this)">?</button>&#160;&#160;Sujeto expreso-predicado verbal</li><li id="Q_17_1"><button class="FuncButton" id="Q_17_1_Btn" onclick="CheckMCAnswer(17,1,this)">?</button>&#160;&#160;Sujeto expreso-predicado nominal</li><li id="Q_17_2"><button class="FuncButton" id="Q_17_2_Btn" onclick="CheckMCAnswer(17,2,this)">?</button>&#160;&#160;Sujeto t&#x00E1;cito-predicado verbal</li><li id="Q_17_3"><button class="FuncButton" id="Q_17_3_Btn" onclick="CheckMCAnswer(17,3,this)">?</button>&#160;&#160;Sujeto t&#x00E1;cito-predicado nominal</li></ol></li>
+<li class="QuizQuestion" id="Q_18" style="display: none;"><div class="QuestionText">Clasifique la siguiente oraci&#x00F3;n de acuerdo a su sujeto y predicado: Aquella ma&#x00F1;ana invernal estaba m&#x00E1;s fr&#x00ED;a de lo esperado</div><ol class="MCAnswers"><li id="Q_18_0"><button class="FuncButton" id="Q_18_0_Btn" onclick="CheckMCAnswer(18,0,this)">?</button>&#160;&#160;Sujeto expreso-predicado verbal</li><li id="Q_18_1"><button class="FuncButton" id="Q_18_1_Btn" onclick="CheckMCAnswer(18,1,this)">?</button>&#160;&#160;Sujeto expreso-predicado nominal</li><li id="Q_18_2"><button class="FuncButton" id="Q_18_2_Btn" onclick="CheckMCAnswer(18,2,this)">?</button>&#160;&#160;Sujeto t&#x00E1;cito-predicado verbal</li><li id="Q_18_3"><button class="FuncButton" id="Q_18_3_Btn" onclick="CheckMCAnswer(18,3,this)">?</button>&#160;&#160;Sujeto t&#x00E1;cito-predicado nominal</li></ol></li>
+<li class="QuizQuestion" id="Q_19" style="display: none;"><div class="QuestionText">Clasifique la siguiente oraci&#x00F3;n de acuerdo a su sujeto y predicado: Encontraremos lo que buscamos</div><ol class="MCAnswers"><li id="Q_19_0"><button class="FuncButton" id="Q_19_0_Btn" onclick="CheckMCAnswer(19,0,this)">?</button>&#160;&#160;Sujeto expreso-predicado verbal</li><li id="Q_19_1"><button class="FuncButton" id="Q_19_1_Btn" onclick="CheckMCAnswer(19,1,this)">?</button>&#160;&#160;Sujeto expreso-predicado nominal</li><li id="Q_19_2"><button class="FuncButton" id="Q_19_2_Btn" onclick="CheckMCAnswer(19,2,this)">?</button>&#160;&#160;Sujeto t&#x00E1;cito-predicado verbal</li><li id="Q_19_3"><button class="FuncButton" id="Q_19_3_Btn" onclick="CheckMCAnswer(19,3,this)">?</button>&#160;&#160;Sujeto t&#x00E1;cito-predicado nominal</li></ol></li>
+<li class="QuizQuestion" id="Q_20" style="display: none;"><div class="QuestionText">Clasifique la siguiente oraci&#x00F3;n de acuerdo a su sujeto y predicado: Cada quien es responsable de su propia basura </div><ol class="MCAnswers"><li id="Q_20_0"><button class="FuncButton" id="Q_20_0_Btn" onclick="CheckMCAnswer(20,0,this)">?</button>&#160;&#160;Sujeto expreso-predicado verbal</li><li id="Q_20_1"><button class="FuncButton" id="Q_20_1_Btn" onclick="CheckMCAnswer(20,1,this)">?</button>&#160;&#160;Sujeto expreso-predicado nominal</li><li id="Q_20_2"><button class="FuncButton" id="Q_20_2_Btn" onclick="CheckMCAnswer(20,2,this)">?</button>&#160;&#160;Sujeto t&#x00E1;cito-predicado verbal</li><li id="Q_20_3"><button class="FuncButton" id="Q_20_3_Btn" onclick="CheckMCAnswer(20,3,this)">?</button>&#160;&#160;Sujeto t&#x00E1;cito-predicado nominal</li></ol></li>
+<li class="QuizQuestion" id="Q_21" style="display: none;"><div class="QuestionText">Clasifique la siguiente oraci&#x00F3;n de acuerdo a su sujeto y predicado: Acepta la verdad de donde sea que venga</div><ol class="MCAnswers"><li id="Q_21_0"><button class="FuncButton" id="Q_21_0_Btn" onclick="CheckMCAnswer(21,0,this)">?</button>&#160;&#160;Sujeto expreso-predicado verbal</li><li id="Q_21_1"><button class="FuncButton" id="Q_21_1_Btn" onclick="CheckMCAnswer(21,1,this)">?</button>&#160;&#160;Sujeto expreso-predicado nominal</li><li id="Q_21_2"><button class="FuncButton" id="Q_21_2_Btn" onclick="CheckMCAnswer(21,2,this)">?</button>&#160;&#160;Sujeto t&#x00E1;cito-predicado verbal</li><li id="Q_21_3"><button class="FuncButton" id="Q_21_3_Btn" onclick="CheckMCAnswer(21,3,this)">?</button>&#160;&#160;Sujeto t&#x00E1;cito-predicado nominal</li></ol></li>
+<li class="QuizQuestion" id="Q_22" style="display: none;"><div class="QuestionText">Clasifique la siguiente oraci&#x00F3;n de acuerdo a su sujeto y predicado: Un poco de luz disipa mucha oscuridad</div><ol class="MCAnswers"><li id="Q_22_0"><button class="FuncButton" id="Q_22_0_Btn" onclick="CheckMCAnswer(22,0,this)">?</button>&#160;&#160;Sujeto expreso-predicado verbal</li><li id="Q_22_1"><button class="FuncButton" id="Q_22_1_Btn" onclick="CheckMCAnswer(22,1,this)">?</button>&#160;&#160;Sujeto expreso-predicado nominal</li><li id="Q_22_2"><button class="FuncButton" id="Q_22_2_Btn" onclick="CheckMCAnswer(22,2,this)">?</button>&#160;&#160;Sujeto t&#x00E1;cito-predicado verbal</li><li id="Q_22_3"><button class="FuncButton" id="Q_22_3_Btn" onclick="CheckMCAnswer(22,3,this)">?</button>&#160;&#160;Sujeto t&#x00E1;cito-predicado nominal</li></ol></li>
+<li class="QuizQuestion" id="Q_23" style="display: none;"><div class="QuestionText">Localice la oraci&#x00F3;n subordinada (oraci&#x00F3;n secundaria o proposici&#x00F3;n): La burra que lleva pollino no va derecho al molino</div><ol class="MCAnswers"><li id="Q_23_0"><button class="FuncButton" id="Q_23_0_Btn" onclick="CheckMCAnswer(23,0,this)">?</button>&#160;&#160;que lleva pollino</li><li id="Q_23_1"><button class="FuncButton" id="Q_23_1_Btn" onclick="CheckMCAnswer(23,1,this)">?</button>&#160;&#160;La burra no va derecho al molino</li><li id="Q_23_2"><button class="FuncButton" id="Q_23_2_Btn" onclick="CheckMCAnswer(23,2,this)">?</button>&#160;&#160;Derecho al molino</li><li id="Q_23_3"><button class="FuncButton" id="Q_23_3_Btn" onclick="CheckMCAnswer(23,3,this)">?</button>&#160;&#160;La burra</li></ol></li>
+<li class="QuizQuestion" id="Q_24" style="display: none;"><div class="QuestionText">Localice la oraci&#x00F3;n subordinada (oraci&#x00F3;n secundaria o proposici&#x00F3;n): El pa&#x00ED;s que juzg&#x00F3; a su presidente sorprendi&#x00F3; al mundo</div><ol class="MCAnswers"><li id="Q_24_0"><button class="FuncButton" id="Q_24_0_Btn" onclick="CheckMCAnswer(24,0,this)">?</button>&#160;&#160;El pa&#x00ED;s sorprendi&#x00F3; al mundo</li><li id="Q_24_1"><button class="FuncButton" id="Q_24_1_Btn" onclick="CheckMCAnswer(24,1,this)">?</button>&#160;&#160;El pa&#x00ED;s que juzg&#x00F3; a su presidente</li><li id="Q_24_2"><button class="FuncButton" id="Q_24_2_Btn" onclick="CheckMCAnswer(24,2,this)">?</button>&#160;&#160;que juzg&#x00F3; a su presidente</li><li id="Q_24_3"><button class="FuncButton" id="Q_24_3_Btn" onclick="CheckMCAnswer(24,3,this)">?</button>&#160;&#160;sorprendi&#x00F3; al mundo</li></ol></li>
+<li class="QuizQuestion" id="Q_25" style="display: none;"><div class="QuestionText">Localice la oraci&#x00F3;n subordinada (oraci&#x00F3;n secundaria o proposici&#x00F3;n): Cuando me ve me saluda</div><ol class="MCAnswers"><li id="Q_25_0"><button class="FuncButton" id="Q_25_0_Btn" onclick="CheckMCAnswer(25,0,this)">?</button>&#160;&#160;me saluda</li><li id="Q_25_1"><button class="FuncButton" id="Q_25_1_Btn" onclick="CheckMCAnswer(25,1,this)">?</button>&#160;&#160;Cuando me saluda</li><li id="Q_25_2"><button class="FuncButton" id="Q_25_2_Btn" onclick="CheckMCAnswer(25,2,this)">?</button>&#160;&#160;me ve</li><li id="Q_25_3"><button class="FuncButton" id="Q_25_3_Btn" onclick="CheckMCAnswer(25,3,this)">?</button>&#160;&#160;Cuando me ve</li></ol></li>
+<li class="QuizQuestion" id="Q_26" style="display: none;"><div class="QuestionText">Localice la oraci&#x00F3;n subordinada (oraci&#x00F3;n secundaria o proposici&#x00F3;n): Lo puse ah&#x00ED;, donde lo dejaste</div><ol class="MCAnswers"><li id="Q_26_0"><button class="FuncButton" id="Q_26_0_Btn" onclick="CheckMCAnswer(26,0,this)">?</button>&#160;&#160;donde lo dejaste</li><li id="Q_26_1"><button class="FuncButton" id="Q_26_1_Btn" onclick="CheckMCAnswer(26,1,this)">?</button>&#160;&#160;Lo puse ah&#x00ED;</li><li id="Q_26_2"><button class="FuncButton" id="Q_26_2_Btn" onclick="CheckMCAnswer(26,2,this)">?</button>&#160;&#160;Lo dejaste</li><li id="Q_26_3"><button class="FuncButton" id="Q_26_3_Btn" onclick="CheckMCAnswer(26,3,this)">?</button>&#160;&#160;Lo puse</li></ol></li>
+<li class="QuizQuestion" id="Q_27" style="display: none;"><div class="QuestionText">Localice la oraci&#x00F3;n principal: Socorrieron a la mujer que estaba gritando</div><ol class="MCAnswers"><li id="Q_27_0"><button class="FuncButton" id="Q_27_0_Btn" onclick="CheckMCAnswer(27,0,this)">?</button>&#160;&#160;la mujer que estaba gritando</li><li id="Q_27_1"><button class="FuncButton" id="Q_27_1_Btn" onclick="CheckMCAnswer(27,1,this)">?</button>&#160;&#160;estaba gritando</li><li id="Q_27_2"><button class="FuncButton" id="Q_27_2_Btn" onclick="CheckMCAnswer(27,2,this)">?</button>&#160;&#160;que estaba gritando</li><li id="Q_27_3"><button class="FuncButton" id="Q_27_3_Btn" onclick="CheckMCAnswer(27,3,this)">?</button>&#160;&#160;Socorrieron a la mujer</li></ol></li>
+<li class="QuizQuestion" id="Q_28" style="display: none;"><div class="QuestionText">Localice la oraci&#x00F3;n principal: Si te apuras llegar&#x00E1;s sin contratiempos</div><ol class="MCAnswers"><li id="Q_28_0"><button class="FuncButton" id="Q_28_0_Btn" onclick="CheckMCAnswer(28,0,this)">?</button>&#160;&#160;Si te apuras</li><li id="Q_28_1"><button class="FuncButton" id="Q_28_1_Btn" onclick="CheckMCAnswer(28,1,this)">?</button>&#160;&#160;llegar&#x00E1;s sin contratiempos</li><li id="Q_28_2"><button class="FuncButton" id="Q_28_2_Btn" onclick="CheckMCAnswer(28,2,this)">?</button>&#160;&#160;te apuras</li><li id="Q_28_3"><button class="FuncButton" id="Q_28_3_Btn" onclick="CheckMCAnswer(28,3,this)">?</button>&#160;&#160;te apuras sin contratiempos</li></ol></li>
+<li class="QuizQuestion" id="Q_29" style="display: none;"><div class="QuestionText">Localice la oraci&#x00F3;n principal: Trajeron un regalo para la ni&#x00F1;a que viste de amarillo</div><ol class="MCAnswers"><li id="Q_29_0"><button class="FuncButton" id="Q_29_0_Btn" onclick="CheckMCAnswer(29,0,this)">?</button>&#160;&#160;que viste de amarillo</li><li id="Q_29_1"><button class="FuncButton" id="Q_29_1_Btn" onclick="CheckMCAnswer(29,1,this)">?</button>&#160;&#160;Trajeron un regalo para la ni&#x00F1;a</li><li id="Q_29_2"><button class="FuncButton" id="Q_29_2_Btn" onclick="CheckMCAnswer(29,2,this)">?</button>&#160;&#160;Trajeron un regalo</li><li id="Q_29_3"><button class="FuncButton" id="Q_29_3_Btn" onclick="CheckMCAnswer(29,3,this)">?</button>&#160;&#160;la ni&#x00F1;a que viste de amarillo</li></ol></li>
+<li class="QuizQuestion" id="Q_30" style="display: none;"><div class="QuestionText">Localice la oraci&#x00F3;n principal: Aquellos diligentes trabajadores, que por lo visto no hab&#x00ED;an le&#x00ED;do sus contratos, no estaban enterados de su <br />desesperada situaci&#x00F3;n</div><ol class="MCAnswers"><li id="Q_30_0"><button class="FuncButton" id="Q_30_0_Btn" onclick="CheckMCAnswer(30,0,this)">?</button>&#160;&#160;Aquellos diligentes trabajadores no estaban enterados de su desesperada situaci&#x00F3;n</li><li id="Q_30_1"><button class="FuncButton" id="Q_30_1_Btn" onclick="CheckMCAnswer(30,1,this)">?</button>&#160;&#160;que por lo visto</li><li id="Q_30_2"><button class="FuncButton" id="Q_30_2_Btn" onclick="CheckMCAnswer(30,2,this)">?</button>&#160;&#160;que por lo visto no hab&#x00ED;an le&#x00ED;do sus contratos</li><li id="Q_30_3"><button class="FuncButton" id="Q_30_3_Btn" onclick="CheckMCAnswer(30,3,this)">?</button>&#160;&#160;no hab&#x00ED;an le&#x00ED;do sus contratos</li></ol></li>
+<li class="QuizQuestion" id="Q_31" style="display: none;"><div class="QuestionText">Localice la oraci&#x00F3;n principal: Inauguraron la alberca que estaba reci&#x00E9;n pintada</div><ol class="MCAnswers"><li id="Q_31_0"><button class="FuncButton" id="Q_31_0_Btn" onclick="CheckMCAnswer(31,0,this)">?</button>&#160;&#160;Inauguraron</li><li id="Q_31_1"><button class="FuncButton" id="Q_31_1_Btn" onclick="CheckMCAnswer(31,1,this)">?</button>&#160;&#160;que estaba reci&#x00E9;n pintada</li><li id="Q_31_2"><button class="FuncButton" id="Q_31_2_Btn" onclick="CheckMCAnswer(31,2,this)">?</button>&#160;&#160;Inauguraron la alberca</li><li id="Q_31_3"><button class="FuncButton" id="Q_31_3_Btn" onclick="CheckMCAnswer(31,3,this)">?</button>&#160;&#160;la alberca que estaba</li></ol></li>
+<li class="QuizQuestion" id="Q_32" style="display: none;"><div class="QuestionText">Es el complemento directo (objeto directo): Ana declam&#x00F3; una poes&#x00ED;a a su madre en el auditorio</div><ol class="MCAnswers"><li id="Q_32_0"><button class="FuncButton" id="Q_32_0_Btn" onclick="CheckMCAnswer(32,0,this)">?</button>&#160;&#160;Ana</li><li id="Q_32_1"><button class="FuncButton" id="Q_32_1_Btn" onclick="CheckMCAnswer(32,1,this)">?</button>&#160;&#160;una poes&#x00ED;a</li><li id="Q_32_2"><button class="FuncButton" id="Q_32_2_Btn" onclick="CheckMCAnswer(32,2,this)">?</button>&#160;&#160;a su madre</li><li id="Q_32_3"><button class="FuncButton" id="Q_32_3_Btn" onclick="CheckMCAnswer(32,3,this)">?</button>&#160;&#160;en el auditorio</li></ol></li>
+<li class="QuizQuestion" id="Q_33" style="display: none;"><div class="QuestionText">Es el complemento circunstancial de tiempo: Nunca digas de esta agua no beber&#x00E9;</div><ol class="MCAnswers"><li id="Q_33_0"><button class="FuncButton" id="Q_33_0_Btn" onclick="CheckMCAnswer(33,0,this)">?</button>&#160;&#160;Nunca</li><li id="Q_33_1"><button class="FuncButton" id="Q_33_1_Btn" onclick="CheckMCAnswer(33,1,this)">?</button>&#160;&#160;digas</li><li id="Q_33_2"><button class="FuncButton" id="Q_33_2_Btn" onclick="CheckMCAnswer(33,2,this)">?</button>&#160;&#160;de esta agua</li><li id="Q_33_3"><button class="FuncButton" id="Q_33_3_Btn" onclick="CheckMCAnswer(33,3,this)">?</button>&#160;&#160;de esta agua no beber&#x00E9;</li></ol></li>
+<li class="QuizQuestion" id="Q_34" style="display: none;"><div class="QuestionText">Es el complemento circunstancial de compa&#x00F1;ia: El pr&#x00F3;ximo mes ir&#x00E9; a Europa con mi abuela</div><ol class="MCAnswers"><li id="Q_34_0"><button class="FuncButton" id="Q_34_0_Btn" onclick="CheckMCAnswer(34,0,this)">?</button>&#160;&#160;El pr&#x00F3;ximo mes</li><li id="Q_34_1"><button class="FuncButton" id="Q_34_1_Btn" onclick="CheckMCAnswer(34,1,this)">?</button>&#160;&#160;ir&#x00E9; a Europa</li><li id="Q_34_2"><button class="FuncButton" id="Q_34_2_Btn" onclick="CheckMCAnswer(34,2,this)">?</button>&#160;&#160;a Europa</li><li id="Q_34_3"><button class="FuncButton" id="Q_34_3_Btn" onclick="CheckMCAnswer(34,3,this)">?</button>&#160;&#160;con mi abuela</li></ol></li>
+<li class="QuizQuestion" id="Q_35" style="display: none;"><div class="QuestionText">Es el complemento circunstancial de modo: R&#x00E1;pidamente ocult&#x00F3; aquella misteriosa nota debajo de la almohada</div><ol class="MCAnswers"><li id="Q_35_0"><button class="FuncButton" id="Q_35_0_Btn" onclick="CheckMCAnswer(35,0,this)">?</button>&#160;&#160;aquella misteriosa nota</li><li id="Q_35_1"><button class="FuncButton" id="Q_35_1_Btn" onclick="CheckMCAnswer(35,1,this)">?</button>&#160;&#160;R&#x00E1;pidamente</li><li id="Q_35_2"><button class="FuncButton" id="Q_35_2_Btn" onclick="CheckMCAnswer(35,2,this)">?</button>&#160;&#160;debajo de la almohada</li><li id="Q_35_3"><button class="FuncButton" id="Q_35_3_Btn" onclick="CheckMCAnswer(35,3,this)">?</button>&#160;&#160;ocult&#x00F3;</li></ol></li>
+<li class="QuizQuestion" id="Q_36" style="display: none;"><div class="QuestionText">Es el complemento indirecto (objeto indirecto): Os advert&#x00ED; el peligro constantemente</div><ol class="MCAnswers"><li id="Q_36_0"><button class="FuncButton" id="Q_36_0_Btn" onclick="CheckMCAnswer(36,0,this)">?</button>&#160;&#160;el peligro</li><li id="Q_36_1"><button class="FuncButton" id="Q_36_1_Btn" onclick="CheckMCAnswer(36,1,this)">?</button>&#160;&#160;constantemente</li><li id="Q_36_2"><button class="FuncButton" id="Q_36_2_Btn" onclick="CheckMCAnswer(36,2,this)">?</button>&#160;&#160;advert&#x00ED;</li><li id="Q_36_3"><button class="FuncButton" id="Q_36_3_Btn" onclick="CheckMCAnswer(36,3,this)">?</button>&#160;&#160;Os</li></ol></li>
+<li class="QuizQuestion" id="Q_37" style="display: none;"><div class="QuestionText">Es el complemento circunstancial de lugar: Las encontr&#x00E9; en el suelo ayer</div><ol class="MCAnswers"><li id="Q_37_0"><button class="FuncButton" id="Q_37_0_Btn" onclick="CheckMCAnswer(37,0,this)">?</button>&#160;&#160;Las</li><li id="Q_37_1"><button class="FuncButton" id="Q_37_1_Btn" onclick="CheckMCAnswer(37,1,this)">?</button>&#160;&#160;encontr&#x00E9;</li><li id="Q_37_2"><button class="FuncButton" id="Q_37_2_Btn" onclick="CheckMCAnswer(37,2,this)">?</button>&#160;&#160;en el suelo</li><li id="Q_37_3"><button class="FuncButton" id="Q_37_3_Btn" onclick="CheckMCAnswer(37,3,this)">?</button>&#160;&#160;ayer</li></ol></li>
+<li class="QuizQuestion" id="Q_38" style="display: none;"><div class="QuestionText">Localice el complemento circunstancial de lugar: Escribieron el mensaje en la pared oriental cerca del campanario</div><ol class="MCAnswers"><li id="Q_38_0"><button class="FuncButton" id="Q_38_0_Btn" onclick="CheckMCAnswer(38,0,this)">?</button>&#160;&#160;en la pared oriental cerca del campanario</li><li id="Q_38_1"><button class="FuncButton" id="Q_38_1_Btn" onclick="CheckMCAnswer(38,1,this)">?</button>&#160;&#160;Escribieron el mensaje</li><li id="Q_38_2"><button class="FuncButton" id="Q_38_2_Btn" onclick="CheckMCAnswer(38,2,this)">?</button>&#160;&#160;el mensaje</li><li id="Q_38_3"><button class="FuncButton" id="Q_38_3_Btn" onclick="CheckMCAnswer(38,3,this)">?</button>&#160;&#160;en la pared</li></ol></li>
+<li class="QuizQuestion" id="Q_39" style="display: none;"><div class="QuestionText">Localice el complemento directo (objeto directo): Ana lleg&#x00F3; cantando mi canci&#x00F3;n preferida con gran entusiasmo</div><ol class="MCAnswers"><li id="Q_39_0"><button class="FuncButton" id="Q_39_0_Btn" onclick="CheckMCAnswer(39,0,this)">?</button>&#160;&#160;cantando</li><li id="Q_39_1"><button class="FuncButton" id="Q_39_1_Btn" onclick="CheckMCAnswer(39,1,this)">?</button>&#160;&#160;con gran entusiasmo</li><li id="Q_39_2"><button class="FuncButton" id="Q_39_2_Btn" onclick="CheckMCAnswer(39,2,this)">?</button>&#160;&#160;mi canci&#x00F3;n preferida</li><li id="Q_39_3"><button class="FuncButton" id="Q_39_3_Btn" onclick="CheckMCAnswer(39,3,this)">?</button>&#160;&#160;Ana lleg&#x00F3;</li></ol></li>
+<li class="QuizQuestion" id="Q_40" style="display: none;"><div class="QuestionText">Localice el complemento indirecto (objeto indirecto): Todas las ma&#x00F1;anas el peque&#x00F1;o Juan dec&#x00ED;a las mismas palabras a sus incr&#x00E9;dulos hermanos</div><ol class="MCAnswers"><li id="Q_40_0"><button class="FuncButton" id="Q_40_0_Btn" onclick="CheckMCAnswer(40,0,this)">?</button>&#160;&#160;el peque&#x00F1;o Juan</li><li id="Q_40_1"><button class="FuncButton" id="Q_40_1_Btn" onclick="CheckMCAnswer(40,1,this)">?</button>&#160;&#160;a sus incr&#x00E9;dulos hermanos</li><li id="Q_40_2"><button class="FuncButton" id="Q_40_2_Btn" onclick="CheckMCAnswer(40,2,this)">?</button>&#160;&#160;Todas las ma&#x00F1;anas</li><li id="Q_40_3"><button class="FuncButton" id="Q_40_3_Btn" onclick="CheckMCAnswer(40,3,this)">?</button>&#160;&#160;Todas las ma&#x00F1;anas</li></ol></li>
+<li class="QuizQuestion" id="Q_41" style="display: none;"><div class="QuestionText">Localice el complemento agente: El cuerpo de bomberos fue condecorado por el Alcalde en la plaza p&#x00FA;blica</div><ol class="MCAnswers"><li id="Q_41_0"><button class="FuncButton" id="Q_41_0_Btn" onclick="CheckMCAnswer(41,0,this)">?</button>&#160;&#160;El cuerpo de bomberos</li><li id="Q_41_1"><button class="FuncButton" id="Q_41_1_Btn" onclick="CheckMCAnswer(41,1,this)">?</button>&#160;&#160;por el alcalde</li><li id="Q_41_2"><button class="FuncButton" id="Q_41_2_Btn" onclick="CheckMCAnswer(41,2,this)">?</button>&#160;&#160;en la plza p&#x00FA;blica</li><li id="Q_41_3"><button class="FuncButton" id="Q_41_3_Btn" onclick="CheckMCAnswer(41,3,this)">?</button>&#160;&#160;fue condecorado</li></ol></li>
+<li class="QuizQuestion" id="Q_42" style="display: none;"><div class="QuestionText">Localice el complemento agente: Grandes extensiones de bosque son taladas por hombres codiciosos</div><ol class="MCAnswers"><li id="Q_42_0"><button class="FuncButton" id="Q_42_0_Btn" onclick="CheckMCAnswer(42,0,this)">?</button>&#160;&#160;por hombres codiciosos</li><li id="Q_42_1"><button class="FuncButton" id="Q_42_1_Btn" onclick="CheckMCAnswer(42,1,this)">?</button>&#160;&#160;Grandes extensiones de bosque</li><li id="Q_42_2"><button class="FuncButton" id="Q_42_2_Btn" onclick="CheckMCAnswer(42,2,this)">?</button>&#160;&#160;son taladas</li><li id="Q_42_3"><button class="FuncButton" id="Q_42_3_Btn" onclick="CheckMCAnswer(42,3,this)">?</button>&#160;&#160;bosque</li></ol></li>
+<li class="QuizQuestion" id="Q_43" style="display: none;"><div class="QuestionText">Localice el complemento directo (objeto directo): Ma&#x00F1;ana estaremos terminando la tarea encomendada</div><ol class="MCAnswers"><li id="Q_43_0"><button class="FuncButton" id="Q_43_0_Btn" onclick="CheckMCAnswer(43,0,this)">?</button>&#160;&#160;ma&#x00F1;ana</li><li id="Q_43_1"><button class="FuncButton" id="Q_43_1_Btn" onclick="CheckMCAnswer(43,1,this)">?</button>&#160;&#160;estaremos terminando</li><li id="Q_43_2"><button class="FuncButton" id="Q_43_2_Btn" onclick="CheckMCAnswer(43,2,this)">?</button>&#160;&#160;la tarea encomendada</li><li id="Q_43_3"><button class="FuncButton" id="Q_43_3_Btn" onclick="CheckMCAnswer(43,3,this)">?</button>&#160;&#160;la tarea</li></ol></li>
+<li class="QuizQuestion" id="Q_44" style="display: none;"><div class="QuestionText">Opci&#x00F3;n con mayor grado de objetividad</div><ol class="MCAnswers"><li id="Q_44_0"><button class="FuncButton" id="Q_44_0_Btn" onclick="CheckMCAnswer(44,0,this)">?</button>&#160;&#160;Me sent&#x00ED;a ingr&#x00E1;vido y mis dolencias no cesaban. Estaba a punto de sucumbir a la infecci&#x00F3;n y s&#x00F3;lo me preguntaba si volver&#x00ED;a a ver la luz del sol</li><li id="Q_44_1"><button class="FuncButton" id="Q_44_1_Btn" onclick="CheckMCAnswer(44,1,this)">?</button>&#160;&#160;Aquella misteriosa pieza me parec&#x00ED;a m&#x00E1;s rara que la primera. Nunca supe si flotaba o si estaba a punto de volar dirigi&#x00E9;ndose a mis ojos</li><li id="Q_44_2"><button class="FuncButton" id="Q_44_2_Btn" onclick="CheckMCAnswer(44,2,this)">?</button>&#160;&#160;La pieza, que ten&#x00ED;a la forma de un cubo, pesaba 300 gramos y era de color azul</li><li id="Q_44_3"><button class="FuncButton" id="Q_44_3_Btn" onclick="CheckMCAnswer(44,3,this)">?</button>&#160;&#160;No lo s&#x00E9;. No me pregunten. Me desconect&#x00E9; de la realidad justo cuando estaba a punto de suceder tan magno evento. Me lo perd&#x00ED;</li></ol></li>
+<li class="QuizQuestion" id="Q_45" style="display: none;"><div class="QuestionText">Opci&#x00F3;n con mayor grado de subjetividad</div><ol class="MCAnswers"><li id="Q_45_0"><button class="FuncButton" id="Q_45_0_Btn" onclick="CheckMCAnswer(45,0,this)">?</button>&#160;&#160;Enrique fue el primero en llegar. Nuestras versiones coinciden en que al llegar cada uno de nosotros &#x00E9;l ya estaba ah&#x00ED;</li><li id="Q_45_1"><button class="FuncButton" id="Q_45_1_Btn" onclick="CheckMCAnswer(45,1,this)">?</button>&#160;&#160;Ah&#x00ED; estaba frente a nuestros ojos. Pudimos pesarlo o analizar su textura, pero nada de eso hicimos</li><li id="Q_45_2"><button class="FuncButton" id="Q_45_2_Btn" onclick="CheckMCAnswer(45,2,this)">?</button>&#160;&#160;Enrique fue el primero en se&#x00F1;alar su origen alien&#x00ED;gena y su procedencia de la constelaci&#x00F3;n de Ori&#x00F3;n</li><li id="Q_45_3"><button class="FuncButton" id="Q_45_3_Btn" onclick="CheckMCAnswer(45,3,this)">?</button>&#160;&#160;Al examinarla pudimos apreciar que irradiaba cierta iridiscencia. Similar al bismuto, pero con destellos mucho m&#x00E1;s intensos</li></ol></li>
+<li class="QuizQuestion" id="Q_46" style="display: none;"><div class="QuestionText">Opci&#x00F3;n con mayor grado de subjetividad: </div><ol class="MCAnswers"><li id="Q_46_0"><button class="FuncButton" id="Q_46_0_Btn" onclick="CheckMCAnswer(46,0,this)">?</button>&#160;&#160;Pablo, por el contrario, s&#x00F3;lo se&#x00F1;alaba que ser&#x00ED;a un excelente pisa papel en su escritorio ya de por s&#x00ED; desordenado</li><li id="Q_46_1"><button class="FuncButton" id="Q_46_1_Btn" onclick="CheckMCAnswer(46,1,this)">?</button>&#160;&#160;Ten&#x00ED;amos un acuerdo y nadie se atrever&#x00ED;a a quebrantarlo. Guardar&#x00ED;amos el secreto hasta decidir qu&#x00E9; har&#x00ED;amos con aquella pieza</li><li id="Q_46_2"><button class="FuncButton" id="Q_46_2_Btn" onclick="CheckMCAnswer(46,2,this)">?</button>&#160;&#160;Aunque todos dese&#x00E1;bamos tocar aquella roca, mineral o lo que sea; niguno se atrevi&#x00F3; a hacerlo</li><li id="Q_46_3"><button class="FuncButton" id="Q_46_3_Btn" onclick="CheckMCAnswer(46,3,this)">?</button>&#160;&#160;Miro mi reloj y son las 4:00 pm. No s&#x00E9; si la hora a la que sucedi&#x00F3; nuestro descubrimiento tenga alguna relevancia. Sin embargo, as&#x00ED; ha quedado registrado en mi diario</li></ol></li>
+<li class="QuizQuestion" id="Q_47" style="display: none;"><div class="QuestionText">Opci&#x00F3;n con mayor grado de objetividad: </div><ol class="MCAnswers"><li id="Q_47_0"><button class="FuncButton" id="Q_47_0_Btn" onclick="CheckMCAnswer(47,0,this)">?</button>&#160;&#160;Tu escritorio se ve rid&#x00ED;culo, le dije alguna vez. No s&#x00E9; como puedes utilizarlo con ese reducido espacio y cien ch&#x00E1;charas encimas</li><li id="Q_47_1"><button class="FuncButton" id="Q_47_1_Btn" onclick="CheckMCAnswer(47,1,this)">?</button>&#160;&#160;Manchas de.... caf&#x00E9;? t&#x00E9;? Ve t&#x00FA; a saber qu&#x00E9;. Todo ese escritorio era un maldito cuadro cubista a punto sucumbir bajo cualquier peso extra</li><li id="Q_47_2"><button class="FuncButton" id="Q_47_2_Btn" onclick="CheckMCAnswer(47,2,this)">?</button>&#160;&#160;Si me hubieran preguntado, hubiera mando ese escritorio a la primera hoguera y disfrutado ver como ard&#x00ED;a</li><li id="Q_47_3"><button class="FuncButton" id="Q_47_3_Btn" onclick="CheckMCAnswer(47,3,this)">?</button>&#160;&#160;De aqu&#x00E9;l escritorio s&#x00F3;lo se pod&#x00ED;a asegurar su naturaleza met&#x00E1;lica y superficie rectangular de 60x120 cent&#x00ED;metros</li></ol></li>
+<li class="QuizQuestion" id="Q_48" style="display: none;"><div class="QuestionText">Elige la opci&#x00F3;n escrita en lenguaje objetivo</div><ol class="MCAnswers"><li id="Q_48_0"><button class="FuncButton" id="Q_48_0_Btn" onclick="CheckMCAnswer(48,0,this)">?</button>&#160;&#160;Son las 8:00 PM en el reloj de pared de la t&#x00ED;a y aquella pieza frente a nuestros ojos s&#x00F3;lo nos dec&#x00ED;a que era un s&#x00F3;lido a temperatura ambiente</li><li id="Q_48_1"><button class="FuncButton" id="Q_48_1_Btn" onclick="CheckMCAnswer(48,1,this)">?</button>&#160;&#160;Todo lo dem&#x00E1;s era incierto hasta para el m&#x00E1;s observador. El color era de mal gusto y sus patas remendadas combinaban madera y distintos materiales improvisados con ingenio despreocupado</li><li id="Q_48_2"><button class="FuncButton" id="Q_48_2_Btn" onclick="CheckMCAnswer(48,2,this)">?</button>&#160;&#160;Por fin Flavio Andr&#x00E9;s sugiri&#x00F3;: &#x201C;Veamos si el perro de Pablo se la puede tragar. As&#x00ED; sabremos al menos si es comestible&#x201D;. Todos lo vimos con miradas mordaces y fuimos c&#x00F3;mplices acusadores de su escasa mentalidad inventiva.</li><li id="Q_48_3"><button class="FuncButton" id="Q_48_3_Btn" onclick="CheckMCAnswer(48,3,this)">?</button>&#160;&#160;Est&#x00E1; bien, analizando mi conciencia y mis &#x00FA;ltimas decisiones, tengo que admitir que... la verdad no me gustan estos tipos de an&#x00E1;lisis e introspecciones</li></ol></li>
+<li class="QuizQuestion" id="Q_49" style="display: none;"><div class="QuestionText">Elige la opci&#x00F3;n escrita en lenguaje objetivo</div><ol class="MCAnswers"><li id="Q_49_0"><button class="FuncButton" id="Q_49_0_Btn" onclick="CheckMCAnswer(49,0,this)">?</button>&#160;&#160;Me parece que el Monte Everest me resultar&#x00ED;a muy fr&#x00ED;o e inconveniente</li><li id="Q_49_1"><button class="FuncButton" id="Q_49_1_Btn" onclick="CheckMCAnswer(49,1,this)">?</button>&#160;&#160;El Monte Everest tiene una altura de 8,844 metros y est&#x00E1; en Nepal</li><li id="Q_49_2"><button class="FuncButton" id="Q_49_2_Btn" onclick="CheckMCAnswer(49,2,this)">?</button>&#160;&#160;Verdaderamente es un monte muy alto y seguro es dificil&#x00ED;simo escalar a su cima</li><li id="Q_49_3"><button class="FuncButton" id="Q_49_3_Btn" onclick="CheckMCAnswer(49,3,this)">?</button>&#160;&#160;Esperen, hoy me siento capaz de escalar el Everest con una sola bocanada de aire. Por si no lo han notado, me siento de maravilla</li></ol></li>
+<li class="QuizQuestion" id="Q_50" style="display: none;"><div class="QuestionText">Determine el recurso predominante: La juventud es la flor de la vida</div><ol class="MCAnswers"><li id="Q_50_0"><button class="FuncButton" id="Q_50_0_Btn" onclick="CheckMCAnswer(50,0,this)">?</button>&#160;&#160;Comparaci&#x00F3;n o s&#x00ED;mil</li><li id="Q_50_1"><button class="FuncButton" id="Q_50_1_Btn" onclick="CheckMCAnswer(50,1,this)">?</button>&#160;&#160;Met&#x00E1;fora</li><li id="Q_50_2"><button class="FuncButton" id="Q_50_2_Btn" onclick="CheckMCAnswer(50,2,this)">?</button>&#160;&#160;Alegor&#x00ED;a</li><li id="Q_50_3"><button class="FuncButton" id="Q_50_3_Btn" onclick="CheckMCAnswer(50,3,this)">?</button>&#160;&#160;Hip&#x00E9;rbole</li></ol></li>
+<li class="QuizQuestion" id="Q_51" style="display: none;"><div class="QuestionText">Determine el recurso predominante: Ana est&#x00E1; en la flor de la vida</div><ol class="MCAnswers"><li id="Q_51_0"><button class="FuncButton" id="Q_51_0_Btn" onclick="CheckMCAnswer(51,0,this)">?</button>&#160;&#160;Comparaci&#x00F3;n o s&#x00ED;mil</li><li id="Q_51_1"><button class="FuncButton" id="Q_51_1_Btn" onclick="CheckMCAnswer(51,1,this)">?</button>&#160;&#160;Met&#x00E1;fora</li><li id="Q_51_2"><button class="FuncButton" id="Q_51_2_Btn" onclick="CheckMCAnswer(51,2,this)">?</button>&#160;&#160;Alegor&#x00ED;a</li><li id="Q_51_3"><button class="FuncButton" id="Q_51_3_Btn" onclick="CheckMCAnswer(51,3,this)">?</button>&#160;&#160;Hip&#x00E9;rbole</li></ol></li>
+<li class="QuizQuestion" id="Q_52" style="display: none;"><div class="QuestionText">Determine el recurso predominante: La vida es una selva oscura</div><ol class="MCAnswers"><li id="Q_52_0"><button class="FuncButton" id="Q_52_0_Btn" onclick="CheckMCAnswer(52,0,this)">?</button>&#160;&#160;Paradoja</li><li id="Q_52_1"><button class="FuncButton" id="Q_52_1_Btn" onclick="CheckMCAnswer(52,1,this)">?</button>&#160;&#160;Hip&#x00E9;rbaton</li><li id="Q_52_2"><button class="FuncButton" id="Q_52_2_Btn" onclick="CheckMCAnswer(52,2,this)">?</button>&#160;&#160;Alegor&#x00ED;a</li><li id="Q_52_3"><button class="FuncButton" id="Q_52_3_Btn" onclick="CheckMCAnswer(52,3,this)">?</button>&#160;&#160;Comparaci&#x00F3;n o s&#x00ED;mil</li></ol></li>
+<li class="QuizQuestion" id="Q_53" style="display: none;"><div class="QuestionText">Determine el recurso predominante: &#x00C9;rase un hombre a una nariz pegado</div><ol class="MCAnswers"><li id="Q_53_0"><button class="FuncButton" id="Q_53_0_Btn" onclick="CheckMCAnswer(53,0,this)">?</button>&#160;&#160;Paradoja</li><li id="Q_53_1"><button class="FuncButton" id="Q_53_1_Btn" onclick="CheckMCAnswer(53,1,this)">?</button>&#160;&#160;Hip&#x00E9;rbaton</li><li id="Q_53_2"><button class="FuncButton" id="Q_53_2_Btn" onclick="CheckMCAnswer(53,2,this)">?</button>&#160;&#160;Hip&#x00E9;rbole</li><li id="Q_53_3"><button class="FuncButton" id="Q_53_3_Btn" onclick="CheckMCAnswer(53,3,this)">?</button>&#160;&#160;Met&#x00E1;fora</li></ol></li>
+<li class="QuizQuestion" id="Q_54" style="display: none;"><div class="QuestionText">Determine el recurso predominante: Aquel soldado contaba con s&#x00F3;lo veinte primaveras</div><ol class="MCAnswers"><li id="Q_54_0"><button class="FuncButton" id="Q_54_0_Btn" onclick="CheckMCAnswer(54,0,this)">?</button>&#160;&#160;Alegor&#x00ED;a</li><li id="Q_54_1"><button class="FuncButton" id="Q_54_1_Btn" onclick="CheckMCAnswer(54,1,this)">?</button>&#160;&#160;Met&#x00E1;fora</li><li id="Q_54_2"><button class="FuncButton" id="Q_54_2_Btn" onclick="CheckMCAnswer(54,2,this)">?</button>&#160;&#160;Hip&#x00E9;rbole</li><li id="Q_54_3"><button class="FuncButton" id="Q_54_3_Btn" onclick="CheckMCAnswer(54,3,this)">?</button>&#160;&#160;Paradoja</li></ol></li>
+<li class="QuizQuestion" id="Q_55" style="display: none;"><div class="QuestionText">Determine el recurso predominante: Dante estaba perdido en una selva oscura y era amenazado por las fieras. Entonces lleg&#x00F3; Virgilio para mostrarle el camino</div><ol class="MCAnswers"><li id="Q_55_0"><button class="FuncButton" id="Q_55_0_Btn" onclick="CheckMCAnswer(55,0,this)">?</button>&#160;&#160;Alegor&#x00ED;a</li><li id="Q_55_1"><button class="FuncButton" id="Q_55_1_Btn" onclick="CheckMCAnswer(55,1,this)">?</button>&#160;&#160;Comparaci&#x00F3;n o s&#x00ED;mil</li><li id="Q_55_2"><button class="FuncButton" id="Q_55_2_Btn" onclick="CheckMCAnswer(55,2,this)">?</button>&#160;&#160;Hip&#x00E9;rbaton</li><li id="Q_55_3"><button class="FuncButton" id="Q_55_3_Btn" onclick="CheckMCAnswer(55,3,this)">?</button>&#160;&#160;Met&#x00E1;fora</li></ol></li>
+<li class="QuizQuestion" id="Q_56" style="display: none;"><div class="QuestionText">Determine el recurso predominante: Aquellas flechas multicolor que cruzan el cielo y que entonan su canto matinal posadas en aquella rama</div><ol class="MCAnswers"><li id="Q_56_0"><button class="FuncButton" id="Q_56_0_Btn" onclick="CheckMCAnswer(56,0,this)">?</button>&#160;&#160;Hip&#x00E9;rbole</li><li id="Q_56_1"><button class="FuncButton" id="Q_56_1_Btn" onclick="CheckMCAnswer(56,1,this)">?</button>&#160;&#160;Comparaci&#x00F3;n o s&#x00ED;mil</li><li id="Q_56_2"><button class="FuncButton" id="Q_56_2_Btn" onclick="CheckMCAnswer(56,2,this)">?</button>&#160;&#160;Hip&#x00E9;rbole</li><li id="Q_56_3"><button class="FuncButton" id="Q_56_3_Btn" onclick="CheckMCAnswer(56,3,this)">?</button>&#160;&#160;Met&#x00E1;fora</li></ol></li>
+<li class="QuizQuestion" id="Q_57" style="display: none;"><div class="QuestionText">Determine el recurso predominante: En la batalla la sangre llegaba a las rodillas</div><ol class="MCAnswers"><li id="Q_57_0"><button class="FuncButton" id="Q_57_0_Btn" onclick="CheckMCAnswer(57,0,this)">?</button>&#160;&#160;Comparaci&#x00F3;n o s&#x00ED;mil</li><li id="Q_57_1"><button class="FuncButton" id="Q_57_1_Btn" onclick="CheckMCAnswer(57,1,this)">?</button>&#160;&#160;Alegor&#x00ED;a</li><li id="Q_57_2"><button class="FuncButton" id="Q_57_2_Btn" onclick="CheckMCAnswer(57,2,this)">?</button>&#160;&#160;Hip&#x00E9;rbole</li><li id="Q_57_3"><button class="FuncButton" id="Q_57_3_Btn" onclick="CheckMCAnswer(57,3,this)">?</button>&#160;&#160;Paradoja</li></ol></li>
+<li class="QuizQuestion" id="Q_58" style="display: none;"><div class="QuestionText">Determine el recurso predominante: En su taller las sillas de la iglesia Nicol&#x00E1;s por la tarde reparar&#x00E1;</div><ol class="MCAnswers"><li id="Q_58_0"><button class="FuncButton" id="Q_58_0_Btn" onclick="CheckMCAnswer(58,0,this)">?</button>&#160;&#160;Paradoja</li><li id="Q_58_1"><button class="FuncButton" id="Q_58_1_Btn" onclick="CheckMCAnswer(58,1,this)">?</button>&#160;&#160;Hip&#x00E9;rbaton</li><li id="Q_58_2"><button class="FuncButton" id="Q_58_2_Btn" onclick="CheckMCAnswer(58,2,this)">?</button>&#160;&#160;Alegor&#x00ED;a</li><li id="Q_58_3"><button class="FuncButton" id="Q_58_3_Btn" onclick="CheckMCAnswer(58,3,this)">?</button>&#160;&#160;Comparaci&#x00F3;n o s&#x00ED;mil</li></ol></li>
+<li class="QuizQuestion" id="Q_59" style="display: none;"><div class="QuestionText">Determine el recurso predominante: Las l&#x00E1;grimas son agua y van al mar; los suspiros son aire y se los lleva el viento</div><ol class="MCAnswers"><li id="Q_59_0"><button class="FuncButton" id="Q_59_0_Btn" onclick="CheckMCAnswer(59,0,this)">?</button>&#160;&#160;Hip&#x00E9;rbole</li><li id="Q_59_1"><button class="FuncButton" id="Q_59_1_Btn" onclick="CheckMCAnswer(59,1,this)">?</button>&#160;&#160;Alegor&#x00ED;a</li><li id="Q_59_2"><button class="FuncButton" id="Q_59_2_Btn" onclick="CheckMCAnswer(59,2,this)">?</button>&#160;&#160;Met&#x00E1;fora</li><li id="Q_59_3"><button class="FuncButton" id="Q_59_3_Btn" onclick="CheckMCAnswer(59,3,this)">?</button>&#160;&#160;Comparaci&#x00F3;n o s&#x00ED;mil</li></ol></li>
+<li class="QuizQuestion" id="Q_60" style="display: none;"><div class="QuestionText">Determine el recurso predominante: Lo esper&#x00F3; la vida entera y a&#x00FA;n despu&#x00E9;s de su infortunada muerte&#x2026; &#x00A1;segu&#x00ED;a esper&#x00E1;ndolo!</div><ol class="MCAnswers"><li id="Q_60_0"><button class="FuncButton" id="Q_60_0_Btn" onclick="CheckMCAnswer(60,0,this)">?</button>&#160;&#160;Hip&#x00E9;rbole</li><li id="Q_60_1"><button class="FuncButton" id="Q_60_1_Btn" onclick="CheckMCAnswer(60,1,this)">?</button>&#160;&#160;Alegor&#x00ED;a</li><li id="Q_60_2"><button class="FuncButton" id="Q_60_2_Btn" onclick="CheckMCAnswer(60,2,this)">?</button>&#160;&#160;Met&#x00E1;fora</li><li id="Q_60_3"><button class="FuncButton" id="Q_60_3_Btn" onclick="CheckMCAnswer(60,3,this)">?</button>&#160;&#160;Paradoja</li></ol></li>
+<li class="QuizQuestion" id="Q_61" style="display: none;"><div class="QuestionText">Determine el recurso predominante: Te llam&#x00E9; un mill&#x00F3;n de veces &#x00BF;D&#x00F3;nde estabas?</div><ol class="MCAnswers"><li id="Q_61_0"><button class="FuncButton" id="Q_61_0_Btn" onclick="CheckMCAnswer(61,0,this)">?</button>&#160;&#160;Hip&#x00E9;rbaton</li><li id="Q_61_1"><button class="FuncButton" id="Q_61_1_Btn" onclick="CheckMCAnswer(61,1,this)">?</button>&#160;&#160;Hip&#x00E9;rbole</li><li id="Q_61_2"><button class="FuncButton" id="Q_61_2_Btn" onclick="CheckMCAnswer(61,2,this)">?</button>&#160;&#160;Met&#x00E1;fora</li><li id="Q_61_3"><button class="FuncButton" id="Q_61_3_Btn" onclick="CheckMCAnswer(61,3,this)">?</button>&#160;&#160;Comparaci&#x00F3;n o s&#x00ED;mil</li></ol></li>
+<li class="QuizQuestion" id="Q_62" style="display: none;"><div class="QuestionText">Determine el recurso predominante: S&#x00F3;lo con el coraz&#x00F3;n se puede ver bien, lo esencial es invisible para los ojos</div><ol class="MCAnswers"><li id="Q_62_0"><button class="FuncButton" id="Q_62_0_Btn" onclick="CheckMCAnswer(62,0,this)">?</button>&#160;&#160;Hip&#x00E9;rbaton</li><li id="Q_62_1"><button class="FuncButton" id="Q_62_1_Btn" onclick="CheckMCAnswer(62,1,this)">?</button>&#160;&#160;Alegor&#x00ED;a</li><li id="Q_62_2"><button class="FuncButton" id="Q_62_2_Btn" onclick="CheckMCAnswer(62,2,this)">?</button>&#160;&#160;Met&#x00E1;fora</li><li id="Q_62_3"><button class="FuncButton" id="Q_62_3_Btn" onclick="CheckMCAnswer(62,3,this)">?</button>&#160;&#160;Paradoja</li></ol></li>
+<li class="QuizQuestion" id="Q_63" style="display: none;"><div class="QuestionText">Determine el recurso predominante: Un coraz&#x00F3;n grande se llena con muy poco</div><ol class="MCAnswers"><li id="Q_63_0"><button class="FuncButton" id="Q_63_0_Btn" onclick="CheckMCAnswer(63,0,this)">?</button>&#160;&#160;Paradoja</li><li id="Q_63_1"><button class="FuncButton" id="Q_63_1_Btn" onclick="CheckMCAnswer(63,1,this)">?</button>&#160;&#160;Alegor&#x00ED;a</li><li id="Q_63_2"><button class="FuncButton" id="Q_63_2_Btn" onclick="CheckMCAnswer(63,2,this)">?</button>&#160;&#160;Met&#x00E1;fora</li><li id="Q_63_3"><button class="FuncButton" id="Q_63_3_Btn" onclick="CheckMCAnswer(63,3,this)">?</button>&#160;&#160;Comparaci&#x00F3;n o s&#x00ED;mil</li></ol></li>
+<li class="QuizQuestion" id="Q_64" style="display: none;"><div class="QuestionText">Autores de "La Il&#x00ED;ada" y "La Eneida", respectivamente</div><ol class="MCAnswers"><li id="Q_64_0"><button class="FuncButton" id="Q_64_0_Btn" onclick="CheckMCAnswer(64,0,this)">?</button>&#160;&#160;Dante y Virgilio</li><li id="Q_64_1"><button class="FuncButton" id="Q_64_1_Btn" onclick="CheckMCAnswer(64,1,this)">?</button>&#160;&#160;Homero y Dante</li><li id="Q_64_2"><button class="FuncButton" id="Q_64_2_Btn" onclick="CheckMCAnswer(64,2,this)">?</button>&#160;&#160;Homero y Virgilio</li><li id="Q_64_3"><button class="FuncButton" id="Q_64_3_Btn" onclick="CheckMCAnswer(64,3,this)">?</button>&#160;&#160;Dante y Arist&#x00F3;teles</li></ol></li>
+<li class="QuizQuestion" id="Q_65" style="display: none;"><div class="QuestionText">Autores de "La divina comedia" y "El Quijote", respectivamente</div><ol class="MCAnswers"><li id="Q_65_0"><button class="FuncButton" id="Q_65_0_Btn" onclick="CheckMCAnswer(65,0,this)">?</button>&#160;&#160;Dante y Goethe</li><li id="Q_65_1"><button class="FuncButton" id="Q_65_1_Btn" onclick="CheckMCAnswer(65,1,this)">?</button>&#160;&#160;Goethe y Cervantes</li><li id="Q_65_2"><button class="FuncButton" id="Q_65_2_Btn" onclick="CheckMCAnswer(65,2,this)">?</button>&#160;&#160;Dante y Cervantes</li><li id="Q_65_3"><button class="FuncButton" id="Q_65_3_Btn" onclick="CheckMCAnswer(65,3,this)">?</button>&#160;&#160;Cervantes y Dante</li></ol></li>
+<li class="QuizQuestion" id="Q_66" style="display: none;"><div class="QuestionText">Autores de "La verdad sospechosa" y "El Periquillo sarniento", respectivamente</div><ol class="MCAnswers"><li id="Q_66_0"><button class="FuncButton" id="Q_66_0_Btn" onclick="CheckMCAnswer(66,0,this)">?</button>&#160;&#160;Juan Ruiz de Alarc&#x00F3;n y Joaqu&#x00ED;n Fern&#x00E1;ndez de Lizardi</li><li id="Q_66_1"><button class="FuncButton" id="Q_66_1_Btn" onclick="CheckMCAnswer(66,1,this)">?</button>&#160;&#160;Juan Ruiz de Alarc&#x00F3;n y Miguel de Cervantes Saavedra</li><li id="Q_66_2"><button class="FuncButton" id="Q_66_2_Btn" onclick="CheckMCAnswer(66,2,this)">?</button>&#160;&#160;Juan Ruiz de Alarc&#x00F3;n y Sor Juana In&#x00E9;s de la Cruz</li><li id="Q_66_3"><button class="FuncButton" id="Q_66_3_Btn" onclick="CheckMCAnswer(66,3,this)">?</button>&#160;&#160;Sor Juana In&#x00E9;s de la Cruz y Juan Ruiz de Alarc&#x00F3;n</li></ol></li>
+<li class="QuizQuestion" id="Q_67" style="display: none;"><div class="QuestionText">Autor de "Crimen y castigo"</div><ol class="MCAnswers"><li id="Q_67_0"><button class="FuncButton" id="Q_67_0_Btn" onclick="CheckMCAnswer(67,0,this)">?</button>&#160;&#160;Tolstoi</li><li id="Q_67_1"><button class="FuncButton" id="Q_67_1_Btn" onclick="CheckMCAnswer(67,1,this)">?</button>&#160;&#160;Dostoievsky</li><li id="Q_67_2"><button class="FuncButton" id="Q_67_2_Btn" onclick="CheckMCAnswer(67,2,this)">?</button>&#160;&#160;Franz Kafka</li><li id="Q_67_3"><button class="FuncButton" id="Q_67_3_Btn" onclick="CheckMCAnswer(67,3,this)">?</button>&#160;&#160;Goethe</li></ol></li>
+<li class="QuizQuestion" id="Q_68" style="display: none;"><div class="QuestionText">Autores de "Metamorfosis" y "Un mundo feliz", respectivamente</div><ol class="MCAnswers"><li id="Q_68_0"><button class="FuncButton" id="Q_68_0_Btn" onclick="CheckMCAnswer(68,0,this)">?</button>&#160;&#160;Franz Kafka y Octavio Paz</li><li id="Q_68_1"><button class="FuncButton" id="Q_68_1_Btn" onclick="CheckMCAnswer(68,1,this)">?</button>&#160;&#160;Rodolfo Usigli y Juan Rulfo</li><li id="Q_68_2"><button class="FuncButton" id="Q_68_2_Btn" onclick="CheckMCAnswer(68,2,this)">?</button>&#160;&#160;Goethe y Juan Rulfo</li><li id="Q_68_3"><button class="FuncButton" id="Q_68_3_Btn" onclick="CheckMCAnswer(68,3,this)">?</button>&#160;&#160;Franz Kafka y Aldous Huxley</li></ol></li>
+<li class="QuizQuestion" id="Q_69" style="display: none;"><div class="QuestionText">Autores de "Pedro P&#x00E1;ramo" y "El laberinto de la soledad"</div><ol class="MCAnswers"><li id="Q_69_0"><button class="FuncButton" id="Q_69_0_Btn" onclick="CheckMCAnswer(69,0,this)">?</button>&#160;&#160;Juan Rulfo y Octavio Paz</li><li id="Q_69_1"><button class="FuncButton" id="Q_69_1_Btn" onclick="CheckMCAnswer(69,1,this)">?</button>&#160;&#160;Juan Rulfo y Ram&#x00F3;n L&#x00F3;pez Velarde</li><li id="Q_69_2"><button class="FuncButton" id="Q_69_2_Btn" onclick="CheckMCAnswer(69,2,this)">?</button>&#160;&#160;Octavio Paz y Mariano Azuela</li><li id="Q_69_3"><button class="FuncButton" id="Q_69_3_Btn" onclick="CheckMCAnswer(69,3,this)">?</button>&#160;&#160;Mart&#x00ED;n Luis Guzm&#x00E1;n y Rodolfo Usigli</li></ol></li>
+<li class="QuizQuestion" id="Q_70" style="display: none;"><div class="QuestionText">Se&#x00F1;ale la opci&#x00F3;n que contiene el significado del adagio: &#x201C;Cuando el tecolote canta, el indio muere. No es cierto, pero sucede&#x201D;</div><ol class="MCAnswers"><li id="Q_70_0"><button class="FuncButton" id="Q_70_0_Btn" onclick="CheckMCAnswer(70,0,this)">?</button>&#160;&#160;Si algo puede suceder, suceder&#x00E1;</li><li id="Q_70_1"><button class="FuncButton" id="Q_70_1_Btn" onclick="CheckMCAnswer(70,1,this)">?</button>&#160;&#160;D&#x00ED;cese de las situaciones que, a pesar de que es consabido que son inofensivas, siguen causando temor</li><li id="Q_70_2"><button class="FuncButton" id="Q_70_2_Btn" onclick="CheckMCAnswer(70,2,this)">?</button>&#160;&#160;Los sonidos de la naturaleza tienen ciertas frecuencias nocivas para los pueblos aut&#x00F3;ctonos americanos</li><li id="Q_70_3"><button class="FuncButton" id="Q_70_3_Btn" onclick="CheckMCAnswer(70,3,this)">?</button>&#160;&#160;Los refranes acerca de las aves son falsos, pero ocasionalmente son veraces</li></ol></li>
+<li class="QuizQuestion" id="Q_71" style="display: none;"><div class="QuestionText">Si el n&#x00FA;mero de oraciones en un texto es igual al n&#x00FA;mero de verbos conjugados en modo personal (enunciados bimembres), diga cu&#x00E1;l es el n&#x00FA;mero de oraciones en el siguiente p&#x00E1;rrafo:<br /><br />&#x201C;La t&#x00ED;a Emma lleg&#x00F3; empapada de cabo a rabo. Llov&#x00ED;a a c&#x00E1;ntaros afuera y, como era su costumbre, nos mare&#x00F3; con sus an&#x00E9;cdotas bajo la lluvia. De tal palo, tal astilla.... exclam&#x00F3;, mientras todos suspend&#x00ED;amos aquel delicioso trozo de pastel a la altura de la barbilla. La sombra que ayer nos hizo palidecer se aproximaba a espaldas de la t&#x00ED;a. S&#x00F3;lo alcanz&#x00F3; a continuar diciendo: Correr es saludable... Y la oscuridad cay&#x00F3; como plomo en toda la estancia, negra y espesa. Era de noche&#x201D;. </div><ol class="MCAnswers"><li id="Q_71_0"><button class="FuncButton" id="Q_71_0_Btn" onclick="CheckMCAnswer(71,0,this)">?</button>&#160;&#160;10</li><li id="Q_71_1"><button class="FuncButton" id="Q_71_1_Btn" onclick="CheckMCAnswer(71,1,this)">?</button>&#160;&#160;8</li><li id="Q_71_2"><button class="FuncButton" id="Q_71_2_Btn" onclick="CheckMCAnswer(71,2,this)">?</button>&#160;&#160;6</li><li id="Q_71_3"><button class="FuncButton" id="Q_71_3_Btn" onclick="CheckMCAnswer(71,3,this)">?</button>&#160;&#160;9</li></ol></li>
+<li class="QuizQuestion" id="Q_72" style="display: none;"><div class="QuestionText">El extra&#x00F1;o visitante parec&#x00ED;a sumergido en un mundo que hab&#x00ED;a vencido las leyes de la gravedad. &#x00BF;Cu&#x00E1;l es el sujeto?</div><ol class="MCAnswers"><li id="Q_72_0"><button class="FuncButton" id="Q_72_0_Btn" onclick="CheckMCAnswer(72,0,this)">?</button>&#160;&#160;un mundo que hab&#x00ED;a vencido las leyes de la gravedad</li><li id="Q_72_1"><button class="FuncButton" id="Q_72_1_Btn" onclick="CheckMCAnswer(72,1,this)">?</button>&#160;&#160;un mundo</li><li id="Q_72_2"><button class="FuncButton" id="Q_72_2_Btn" onclick="CheckMCAnswer(72,2,this)">?</button>&#160;&#160;El extra&#x00F1;o visitante</li><li id="Q_72_3"><button class="FuncButton" id="Q_72_3_Btn" onclick="CheckMCAnswer(72,3,this)">?</button>&#160;&#160;las leyes de la gravedad</li></ol></li>
+<li class="QuizQuestion" id="Q_73" style="display: none;"><div class="QuestionText">Cada vez que viene a Londres, me visita. &#x00BF;Cu&#x00E1;l es el predicado?</div><ol class="MCAnswers"><li id="Q_73_0"><button class="FuncButton" id="Q_73_0_Btn" onclick="CheckMCAnswer(73,0,this)">?</button>&#160;&#160;Me visita</li><li id="Q_73_1"><button class="FuncButton" id="Q_73_1_Btn" onclick="CheckMCAnswer(73,1,this)">?</button>&#160;&#160;Londres</li><li id="Q_73_2"><button class="FuncButton" id="Q_73_2_Btn" onclick="CheckMCAnswer(73,2,this)">?</button>&#160;&#160;Cada vez que viene a Londres</li><li id="Q_73_3"><button class="FuncButton" id="Q_73_3_Btn" onclick="CheckMCAnswer(73,3,this)">?</button>&#160;&#160;viene a Londres</li></ol></li>
+<li class="QuizQuestion" id="Q_74" style="display: none;"><div class="QuestionText">El trabajo arduo, cuya recompensa suele venir mucho tiempo despu&#x00E9;s, es frecuentemente evitado por los incautos y desprevenidos. &#x00BF;Cu&#x00E1;l es la oraci&#x00F3;n subordinada?</div><ol class="MCAnswers"><li id="Q_74_0"><button class="FuncButton" id="Q_74_0_Btn" onclick="CheckMCAnswer(74,0,this)">?</button>&#160;&#160;cuya recompensa suele venir mucho tiempo despu&#x00E9;s</li><li id="Q_74_1"><button class="FuncButton" id="Q_74_1_Btn" onclick="CheckMCAnswer(74,1,this)">?</button>&#160;&#160;El trabajo arduo</li><li id="Q_74_2"><button class="FuncButton" id="Q_74_2_Btn" onclick="CheckMCAnswer(74,2,this)">?</button>&#160;&#160;es frecuentemente evitado</li><li id="Q_74_3"><button class="FuncButton" id="Q_74_3_Btn" onclick="CheckMCAnswer(74,3,this)">?</button>&#160;&#160;por los incautos y desprevenidos</li></ol></li>
+<li class="QuizQuestion" id="Q_75" style="display: none;"><div class="QuestionText">El rey decret&#x00F3; CD, CI, CCL hace apenas un mes. En la expresi&#x00F3;n anterior podemos sustituir CD, CI y CCL por...</div><ol class="MCAnswers"><li id="Q_75_0"><button class="FuncButton" id="Q_75_0_Btn" onclick="CheckMCAnswer(75,0,this)">?</button>&#160;&#160;un decreto, desde su trono a sus s&#x00FA;bditos</li><li id="Q_75_1"><button class="FuncButton" id="Q_75_1_Btn" onclick="CheckMCAnswer(75,1,this)">?</button>&#160;&#160;un impuesto, a su pueblo, en su reino</li><li id="Q_75_2"><button class="FuncButton" id="Q_75_2_Btn" onclick="CheckMCAnswer(75,2,this)">?</button>&#160;&#160;en su trono, para su reina, ayer</li><li id="Q_75_3"><button class="FuncButton" id="Q_75_3_Btn" onclick="CheckMCAnswer(75,3,this)">?</button>&#160;&#160;una orden, para todos, en&#x00E9;rgicamente</li></ol></li>
+<li class="QuizQuestion" id="Q_76" style="display: none;"><div class="QuestionText">CCM camin&#x00F3; CCL, CCC. En la expresi&#x00F3;n anterior podemos sustituir CCM, CCL y CCC por....</div><ol class="MCAnswers"><li id="Q_76_0"><button class="FuncButton" id="Q_76_0_Btn" onclick="CheckMCAnswer(76,0,this)">?</button>&#160;&#160;Felizmente, ayer, en el parque</li><li id="Q_76_1"><button class="FuncButton" id="Q_76_1_Btn" onclick="CheckMCAnswer(76,1,this)">?</button>&#160;&#160;Con sus amigos, en el parque, alegremente</li><li id="Q_76_2"><button class="FuncButton" id="Q_76_2_Btn" onclick="CheckMCAnswer(76,2,this)">?</button>&#160;&#160;Alegremente, desde ayer, en la cima</li><li id="Q_76_3"><button class="FuncButton" id="Q_76_3_Btn" onclick="CheckMCAnswer(76,3,this)">?</button>&#160;&#160;R&#x00E1;pidamente, en el parque, con sus amigos</li></ol></li>
+<li class="QuizQuestion" id="Q_77" style="display: none;"><div class="QuestionText">CCN digas CD CI. En la expresi&#x00F3;n anterior podemos sustituir CCN, CD y CI por...</div><ol class="MCAnswers"><li id="Q_77_0"><button class="FuncButton" id="Q_77_0_Btn" onclick="CheckMCAnswer(77,0,this)">?</button>&#160;&#160;No, mentiras, a tus padres</li><li id="Q_77_1"><button class="FuncButton" id="Q_77_1_Btn" onclick="CheckMCAnswer(77,1,this)">?</button>&#160;&#160;No, a tus amigos, groser&#x00ED;as</li><li id="Q_77_2"><button class="FuncButton" id="Q_77_2_Btn" onclick="CheckMCAnswer(77,2,this)">?</button>&#160;&#160;Cuando, aquello, a tus padres</li><li id="Q_77_3"><button class="FuncButton" id="Q_77_3_Btn" onclick="CheckMCAnswer(77,3,this)">?</button>&#160;&#160;A tu diario, ayer, no</li></ol></li>
+<li class="QuizQuestion" id="Q_78" style="display: none;"><div class="QuestionText">Opci&#x00F3;n correctamente acentuada</div><ol class="MCAnswers"><li id="Q_78_0"><button class="FuncButton" id="Q_78_0_Btn" onclick="CheckMCAnswer(78,0,this)">?</button>&#160;&#160;Yo solo se que no s&#x00E9; nada. Bueno, la verdad es que si alguien me ense&#x00F1;ara algo ent&#x00F3;nces si sabr&#x00ED;a dos o tres cosas. Dej&#x00E9; el estudio porque el no me motivaba lo suficiente. Si este me hubiera sido motivador, este camino de incertidumbre nunca lo habr&#x00ED;a recorrido. Mi situaci&#x00F3;n causa pena. D&#x00ED;ganmelo a m&#x00ED;</li><li id="Q_78_1"><button class="FuncButton" id="Q_78_1_Btn" onclick="CheckMCAnswer(78,1,this)">?</button>&#160;&#160;Yo solo se que no se nada. Bueno, la verdad es que si alguien me ense&#x00F1;ara algo entonces s&#x00ED; sabr&#x00ED;a dos o tres cosas. Dej&#x00E9; el estudio porque &#x00E9;l no me motivaba lo suficiente. Si este me hubiera sido motivador, este camino de incertidumbre nunca lo habr&#x00ED;a recorrido. Mi situaci&#x00F3;n causa pena. D&#x00ED;ganmelo a mi</li><li id="Q_78_2"><button class="FuncButton" id="Q_78_2_Btn" onclick="CheckMCAnswer(78,2,this)">?</button>&#160;&#160;Yo solo se que no s&#x00E9; nada. Bueno, la verdad es que si alguien me ense&#x00F1;ara algo entonces si sabr&#x00ED;a dos o tres cosas. Dej&#x00E9; el estudio porque &#x00E9;l no me motivaba lo suficiente. Si &#x00E9;ste me hubiera sido motivador, este camino de incertidumbre nunca lo habr&#x00ED;a recorrido. Mi situaci&#x00F3;n causa pena. D&#x00ED;ganmelo a m&#x00ED;</li><li id="Q_78_3"><button class="FuncButton" id="Q_78_3_Btn" onclick="CheckMCAnswer(78,3,this)">?</button>&#160;&#160;Yo solo s&#x00E9; que no s&#x00E9; nada. Bueno, la verdad es que si alguien me ense&#x00F1;ara algo entonces s&#x00ED; sabr&#x00ED;a dos o tres cosas. Dej&#x00E9; el estudio porque &#x00E9;l no me motivaba lo suficiente. Si &#x00E9;ste me hubiera sido motivador, este camino de incertidumbre nunca lo habr&#x00ED;a recorrido. Mi situaci&#x00F3;n causa pena. D&#x00ED;ganmelo a m&#x00ED;</li></ol></li>
+<li class="QuizQuestion" id="Q_79" style="display: none;"><div class="QuestionText">Si &#x201C;luna&#x201D; es &#x201C;noche&#x201D; y &#x201C;rima&#x201D; es &#x201C;verso&#x201D; &#x00BF;Qu&#x00E9; significa &#x201C;luma&#x201D;?</div><ol class="MCAnswers"><li id="Q_79_0"><button class="FuncButton" id="Q_79_0_Btn" onclick="CheckMCAnswer(79,0,this)">?</button>&#160;&#160;noso</li><li id="Q_79_1"><button class="FuncButton" id="Q_79_1_Btn" onclick="CheckMCAnswer(79,1,this)">?</button>&#160;&#160;luso</li><li id="Q_79_2"><button class="FuncButton" id="Q_79_2_Btn" onclick="CheckMCAnswer(79,2,this)">?</button>&#160;&#160;noma</li><li id="Q_79_3"><button class="FuncButton" id="Q_79_3_Btn" onclick="CheckMCAnswer(79,3,this)">?</button>&#160;&#160;nalu</li></ol></li>
+<li class="QuizQuestion" id="Q_80" style="display: none;"><div class="QuestionText">Si &#x201C;mito&#x201D; es &#x201C;cosa&#x201D; y &#x201C;pera&#x201D; es &#x201C;mila&#x201D; &#x00BF;Qu&#x00E9; significa &#x201C;peto&#x201D;?</div><ol class="MCAnswers"><li id="Q_80_0"><button class="FuncButton" id="Q_80_0_Btn" onclick="CheckMCAnswer(80,0,this)">?</button>&#160;&#160;toco</li><li id="Q_80_1"><button class="FuncButton" id="Q_80_1_Btn" onclick="CheckMCAnswer(80,1,this)">?</button>&#160;&#160;rato</li><li id="Q_80_2"><button class="FuncButton" id="Q_80_2_Btn" onclick="CheckMCAnswer(80,2,this)">?</button>&#160;&#160;misa</li><li id="Q_80_3"><button class="FuncButton" id="Q_80_3_Btn" onclick="CheckMCAnswer(80,3,this)">?</button>&#160;&#160;pesa</li></ol></li>
+<li class="QuizQuestion" id="Q_81" style="display: none;"><div class="QuestionText">Si &#x201C;suto&#x201D; es &#x201C;tona&#x201D; y &#x201C;muso&#x201D; es &#x201C;codu&#x201D; &#x00BF;Qu&#x00E9; significa &#x201C;duto&#x201D;?</div><ol class="MCAnswers"><li id="Q_81_0"><button class="FuncButton" id="Q_81_0_Btn" onclick="CheckMCAnswer(81,0,this)">?</button>&#160;&#160;nato</li><li id="Q_81_1"><button class="FuncButton" id="Q_81_1_Btn" onclick="CheckMCAnswer(81,1,this)">?</button>&#160;&#160;sodu</li><li id="Q_81_2"><button class="FuncButton" id="Q_81_2_Btn" onclick="CheckMCAnswer(81,2,this)">?</button>&#160;&#160;naso</li><li id="Q_81_3"><button class="FuncButton" id="Q_81_3_Btn" onclick="CheckMCAnswer(81,3,this)">?</button>&#160;&#160;sosu</li></ol></li>
+<li class="QuizQuestion" id="Q_82" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;l de los siguientes enunciados NO es ejemplo de enunciado &#x00E9;tico (del cual se derivan conductas aceptables socialmente)?</div><ol class="MCAnswers"><li id="Q_82_0"><button class="FuncButton" id="Q_82_0_Btn" onclick="CheckMCAnswer(82,0,this)">?</button>&#160;&#160;Pedro tuvo el fin de todos los mentirosos, cuando dijo la verdad nadie le crey&#x00F3;</li><li id="Q_82_1"><button class="FuncButton" id="Q_82_1_Btn" onclick="CheckMCAnswer(82,1,this)">?</button>&#160;&#160;Las &#x00FA;ltimas voces fueron escuchadas con m&#x00E1;s fuerza</li><li id="Q_82_2"><button class="FuncButton" id="Q_82_2_Btn" onclick="CheckMCAnswer(82,2,this)">?</button>&#160;&#160;A fin de cuentas, la Historia nos ha ense&#x00F1;ado que el fin no justifica los medios</li><li id="Q_82_3"><button class="FuncButton" id="Q_82_3_Btn" onclick="CheckMCAnswer(82,3,this)">?</button>&#160;&#160;Eso explica tu conducta, pero no la justifica</li></ol></li>
+<li class="QuizQuestion" id="Q_83" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;l de los siguientes enunciados NO es ejemplo de enunciado &#x00E9;tico (del cual se derivan conductas aceptables socialmente)?</div><ol class="MCAnswers"><li id="Q_83_0"><button class="FuncButton" id="Q_83_0_Btn" onclick="CheckMCAnswer(83,0,this)">?</button>&#160;&#160;La comodidad que busca el ego&#x00ED;sta es normalmente incomodidad para los que le rodean</li><li id="Q_83_1"><button class="FuncButton" id="Q_83_1_Btn" onclick="CheckMCAnswer(83,1,this)">?</button>&#160;&#160;Todas las familias felices comparten rasgos semejantes y se parecen. En cambio, las familias infelices cada una es infeliz a su manera</li><li id="Q_83_2"><button class="FuncButton" id="Q_83_2_Btn" onclick="CheckMCAnswer(83,2,this)">?</button>&#160;&#160;Ancha es la puerta que conduce a la perdici&#x00F3;n y muchos pasan por ella. En cambio, angosta es la puerta que conduce a la rectitud y pocos son los que la atraviesan</li><li id="Q_83_3"><button class="FuncButton" id="Q_83_3_Btn" onclick="CheckMCAnswer(83,3,this)">?</button>&#160;&#160;Todos los hombres son mortales. S&#x00F3;crates es hombre. Entonces, S&#x00F3;crates es mortal</li></ol></li>
+<li class="QuizQuestion" id="Q_84" style="display: none;"><div class="QuestionText">&#x00BF;Cu&#x00E1;l de las ideas dadas no forma parte de la idea del siguiente texto?<br />El placer de servir (Gabriela Mistral): <br />Toda la naturaleza es un anhelo de servicio; sirve la nube, sirve el aire, sirve el surco. Donde haya un &#x00E1;rbol que plantar, pl&#x00E1;ntalo t&#x00FA;; donde haya un error que enmendar, enmi&#x00E9;ndalo t&#x00FA;; donde haya un esfuerzo que todos esquiven, ac&#x00E9;ptalo t&#x00FA;.<br />S&#x00E9; el que aparte la estorbosa piedra del camino, s&#x00E9; el que aparte el odio entre los corazones y las dificultades del problema.<br />Existe la alegr&#x00ED;a de ser sano y de ser justo; pero hay, sobre todo, la hermosa, la inmensa alegr&#x00ED;a de servir.<br />&#x00A1;Qu&#x00E9; triste ser&#x00ED;a el mundo si todo en &#x00E9;l estuviera hecho, si no hubiera rosal que plantar, una empresa que acometer!<br />Que no te atraigan solamente los trabajos f&#x00E1;ciles: &#x00A1;Es tan bello hacer lo que otros esquivan!<br />Pero no caigas en el error de que s&#x00F3;lo se hace m&#x00E9;rito con los grandes trabajos; hay peque&#x00F1;os servicios que son buenos servicios: Adornar una mesa, ordenar unos libros, peinar una ni&#x00F1;a. Aqu&#x00E9;l es el que critica, &#x00E9;ste es el que destruye, s&#x00E9; t&#x00FA; el que sirve.<br />El servir no es una faena de seres inferiores. Dios, que da el fruto y la luz, sirve. Pudiera llam&#x00E1;rsele as&#x00ED;: El que sirve. Y tiene sus ojos fijos en nuestras manos y nos pregunta cada d&#x00ED;a: &#x00BF;Serviste hoy? &#x00BF;Al &#x00E1;rbol? &#x00BF;A tu amigo? &#x00BF;A tu madre?</div><ol class="MCAnswers"><li id="Q_84_0"><button class="FuncButton" id="Q_84_0_Btn" onclick="CheckMCAnswer(84,0,this)">?</button>&#160;&#160;El servir es un rasgo de seres superiores</li><li id="Q_84_1"><button class="FuncButton" id="Q_84_1_Btn" onclick="CheckMCAnswer(84,1,this)">?</button>&#160;&#160;Podemos hacer peque&#x00F1;os servicios que en realidad son muy valiosos</li><li id="Q_84_2"><button class="FuncButton" id="Q_84_2_Btn" onclick="CheckMCAnswer(84,2,this)">?</button>&#160;&#160;La Creaci&#x00F3;n no necesita ser mejorada</li><li id="Q_84_3"><button class="FuncButton" id="Q_84_3_Btn" onclick="CheckMCAnswer(84,3,this)">?</button>&#160;&#160;El servir trae consigo su propia satisfacci&#x00F3;n</li></ol></li>
+<li class="QuizQuestion" id="Q_85" style="display: none;"><div class="QuestionText">De autor an&#x00F3;nimo. Esta canci&#x00F3;n de gesta (la &#x00FA;nica que sobrevivi&#x00F3; de la &#x00E9;poca de las Cruzadas en la Edad Media, de ah&#x00ED; la importancia hist&#x00F3;rica de esta obra) relata las haza&#x00F1;as del caballero Rodrigo D&#x00ED;az de Vivar, mejor conocido como &#x201C;El Cid campeador&#x201D;. Este noble caballero, antes que considerarlo hombre de fe o guerrero, debemos considerarlo padre de dos princesas, pues en la narrativa se anteponen los asuntos familiares a los deberes con la patria o con la iglesia.</div><ol class="MCAnswers"><li id="Q_85_0"><button class="FuncButton" id="Q_85_0_Btn" onclick="CheckMCAnswer(85,0,this)">?</button>&#160;&#160;Cantar del M&#x00ED;o Cid</li><li id="Q_85_1"><button class="FuncButton" id="Q_85_1_Btn" onclick="CheckMCAnswer(85,1,this)">?</button>&#160;&#160;Popol Vuh</li><li id="Q_85_2"><button class="FuncButton" id="Q_85_2_Btn" onclick="CheckMCAnswer(85,2,this)">?</button>&#160;&#160;Don Quijote de la Mancha</li><li id="Q_85_3"><button class="FuncButton" id="Q_85_3_Btn" onclick="CheckMCAnswer(85,3,this)">?</button>&#160;&#160;La divina comedia</li></ol></li>
+<li class="QuizQuestion" id="Q_86" style="display: none;"><div class="QuestionText">Es el libro sagrado de los quich&#x00E9;s (mayas). Popol Vuh significa &#x201C;libro del concejo&#x201D; o &#x201C;libro de la comunidad&#x201D;. Es un libro de mitolog&#x00ED;a cosmog&#x00F3;nica, as&#x00ED; que en &#x00E9;l encontraremos el punto de vista maya acerca del origen de los dioses, el origen de la humanidad (y de humanidades anteriores) y de diversos temas de naturaleza religiosa y vivencial. El valor de esta obra radica en que es uno de los pocos libros que se remontan a la &#x00E9;poca prehisp&#x00E1;nica y del que los historiadores validan su autenticidad ind&#x00ED;gena</div><ol class="MCAnswers"><li id="Q_86_0"><button class="FuncButton" id="Q_86_0_Btn" onclick="CheckMCAnswer(86,0,this)">?</button>&#160;&#160;Popol Vuh</li><li id="Q_86_1"><button class="FuncButton" id="Q_86_1_Btn" onclick="CheckMCAnswer(86,1,this)">?</button>&#160;&#160;La divina comedia</li><li id="Q_86_2"><button class="FuncButton" id="Q_86_2_Btn" onclick="CheckMCAnswer(86,2,this)">?</button>&#160;&#160;Don Quijote de la Mancha</li><li id="Q_86_3"><button class="FuncButton" id="Q_86_3_Btn" onclick="CheckMCAnswer(86,3,this)">?</button>&#160;&#160;Cantar del M&#x00ED;o Cid</li></ol></li>
+<li class="QuizQuestion" id="Q_87" style="display: none;"><div class="QuestionText">Publicado en 1605 narra la historia de Alfonso Quijano, un anciano rico que gasta su fortuna adquiriendo y leyendo libros de caballer&#x00ED;a y termina por volverse loco. As&#x00ED;, va el Quijote por el mundo viviendo aventuras y enredos alimentados por su alucinaci&#x00F3;n, todo en compa&#x00F1;&#x00ED;a de su escudero Sancho Panza. Otros personajes dignos de menci&#x00F3;n son su enamorada Dulcinea del Toboso y su caballo Rocinante. El Quijote es la met&#x00E1;fora del individuo que est&#x00E1; dispuesto a luchar por sus ideales a pesar de que el mundo y la realidad le contradigan</div><ol class="MCAnswers"><li id="Q_87_0"><button class="FuncButton" id="Q_87_0_Btn" onclick="CheckMCAnswer(87,0,this)">?</button>&#160;&#160;Cantar del M&#x00ED;o Cid</li><li id="Q_87_1"><button class="FuncButton" id="Q_87_1_Btn" onclick="CheckMCAnswer(87,1,this)">?</button>&#160;&#160;Popol Vuh</li><li id="Q_87_2"><button class="FuncButton" id="Q_87_2_Btn" onclick="CheckMCAnswer(87,2,this)">?</button>&#160;&#160;Don Quijote de la Mancha</li><li id="Q_87_3"><button class="FuncButton" id="Q_87_3_Btn" onclick="CheckMCAnswer(87,3,this)">?</button>&#160;&#160;La divina comedia</li></ol></li>
+<li class="QuizQuestion" id="Q_88" style="display: none;"><div class="QuestionText">Escrita entre 1304 y 1321, esta obra monumental acrisola paganismo, cristianismo, cultura grecolatina e islamismo. Toda la obra es una alegor&#x00ED;a. Dante (el hombre) est&#x00E1; perdido en una selva oscura (la vida) y es amenazado por las fieras (pasiones). En esas circunstancias aparece Virgilio (la raz&#x00F3;n) para mostrarle el camino. As&#x00ED; empezar&#x00E1; Dante su viaje fant&#x00E1;stico por el inframundo o infierno, que es la parte m&#x00E1;s recordada de la obra. Beatriz (la teolog&#x00ED;a, el amor y la fe) ser&#x00E1; la escolta de Dante en el para&#x00ED;so celestial, ya que Virgilio (la raz&#x00F3;n) tiene prohibido el acceso. La importancia de esta obra radica en que los pintores del Renacimiento empezaron a representar el Cielo y al Infierno seg&#x00FA;n las descripciones de Dante. As&#x00ED; es como hoy en d&#x00ED;a estos conceptos tan fuertemente moldeados por la imaginaci&#x00F3;n de Dante se encuentran en el mundo occidental.</div><ol class="MCAnswers"><li id="Q_88_0"><button class="FuncButton" id="Q_88_0_Btn" onclick="CheckMCAnswer(88,0,this)">?</button>&#160;&#160;Cantar del M&#x00ED;o Cid</li><li id="Q_88_1"><button class="FuncButton" id="Q_88_1_Btn" onclick="CheckMCAnswer(88,1,this)">?</button>&#160;&#160;Don Quijote de la Mancha</li><li id="Q_88_2"><button class="FuncButton" id="Q_88_2_Btn" onclick="CheckMCAnswer(88,2,this)">?</button>&#160;&#160;Popol Vuh</li><li id="Q_88_3"><button class="FuncButton" id="Q_88_3_Btn" onclick="CheckMCAnswer(88,3,this)">?</button>&#160;&#160;La divina comedia</li></ol></li></ol>
+
+
+
+</div>
+
+</div>
+
+<div class="Feedback" id="FeedbackDiv">
+<div class="FeedbackText" id="FeedbackContent"></div>
+<button id="FeedbackOKButton" class="FuncButton" onclick="HideFeedback(); return false;">&#160;OK&#160;</button>
+</div>
+
+<!-- BeginBottomNavButtons -->
+
+
+<div class="NavButtonBar" id="BottomNavBar">
+
+
+
+
+<button class="NavButton" onclick="location='contents.htm'; return false;"> Index </button>
+
+
+
+<button class="NavButton" onclick="location='nextpage.htm'; return false;">=&gt;</button>
+
+
+</div>
+
+
+
+<!-- EndBottomNavButtons -->
+
+<!-- BeginSubmissionForm -->
+
+<!-- EndSubmissionForm -->
+
+</body>
+
+</html>
